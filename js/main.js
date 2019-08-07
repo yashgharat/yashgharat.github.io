@@ -9,15 +9,15 @@
   //   }
   // })
   //
-  // // Preloader
-  // $(window).on('load', function () {
-  //   if ($('#preloader').length) {
-  //     $('#preloader').delay(100).fadeOut('slow', function () {
-  //       $(this).remove();
-  //     });
-  //   }
-  // });
-  //
+  // Preloader
+  $(window).on('load', function () {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function () {
+        $(this).remove();
+      });
+    }
+  });
+
 	// /*--/ Star Scrolling nav /--*/
 	// $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
 	// 	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
