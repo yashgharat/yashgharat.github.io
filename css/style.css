@@ -264,37 +264,6 @@ a:hover {
   display: block;
 }
 
-/*------/ Owl Carousel /------*/
-
-.owl-theme .owl-dots {
-  text-align: center;
-  margin-top: 18px;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 18px;
-  height: 7px;
-  margin: 5px 5px;
-  background: #f5dcdc;
-  border: 0px solid #f5dcdc;
-  display: block;
-  transition: all 0.6s ease-in-out;
-  cursor: pointer;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #f5dcdc;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-  background-color: #1B1B1B;
-  width: 25px;
-}
-
 /*--/ Scrolltop s /--*/
 
 .scrolltop-mf {
@@ -475,7 +444,7 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: #000;
   padding-top: 15px;
   padding-bottom: 15px;
 }
