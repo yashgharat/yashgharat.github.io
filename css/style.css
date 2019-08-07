@@ -274,7 +274,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-  color: #be3131;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -317,7 +317,7 @@ a:hover {
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-  color: #be3131;
+  color: #fff;
 }
 
 .navbar-b.navbar-trans .show > .nav-link,
@@ -362,7 +362,7 @@ a:hover {
 }
 
 .navbar-b .navbar-brand {
-  color: #fff;
+  color: #be3131;
   font-size: 1.6rem;
   font-weight: 600;
 }
