@@ -324,12 +324,12 @@ a:hover {
 .navbar-b.navbar-trans .active > .nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
-  color: #be3131;
+  color: #fff;
 }
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #be3131;
+  background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
