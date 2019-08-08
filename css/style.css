@@ -183,3 +183,26 @@ a:hover {
 .intro-single .breadcrumb a {
   color: #fff;
 }
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.section-heading {
+	margin-bottom: 50px;
+}
+
+.section-heading h2 {
+	font-size: 38px;
+	text-transform: uppercase;
+}
+
+.section-heading .heading-line {
+	margin:0 auto;
+	display: block;
+	height: 1px;
+	width: 80px;
+	background: #333;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
