@@ -64,6 +64,25 @@
 
 	}
 
+	$(document).ready(function () {
+		var browserWidth = $(window).width();
+		if (browserWidth > 560) {
+			$(window).scroll(function () {
+				navbar();
+			});
+		}
+	});
+
+
+	$(window).resize(function () {
+		var browserWidth = $(window).width();
+		if (browserWidth > 560) {
+			$(window).scroll(function () {
+				navbar();
+			});
+		}		
+	});
+
 	new WOW().init();
 
 })(jQuery);
