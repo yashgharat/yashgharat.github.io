@@ -132,13 +132,14 @@ section {
 .home-section {
 	width: 100%;
 	padding: 150px 0px 150px 0px;
+	color: #f5f5f5;
 }
 
 /* --- heading --- */
 .section-heading {
 	margin-bottom: 50px;
 	text-align: center;
-	color: whitesmoke;
+	color: #f5f5f5;
 }
 
 .section-heading h2 {
