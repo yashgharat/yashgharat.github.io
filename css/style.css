@@ -205,6 +205,10 @@ nav.navbar.fixed-to-top{
 	font-size: 2em;
 }
 
+.navbar-default {
+  background: #d02120;
+}
+
 /*======================================
 //--//-->   INTRO
 ======================================*/
