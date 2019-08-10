@@ -121,6 +121,35 @@ section {
 }
 
 /*======================================
+//--//-->   HOME-SECTIONS
+======================================*/
+
+.home-section {
+	width: 100%;
+	padding: 150px 0px 150px 0px;
+}
+
+/* --- heading --- */
+.section-heading {
+	margin-bottom: 50px;
+}
+
+.section-heading h2 {
+	font-size: 38px;
+	text-transform: uppercase;
+}
+
+.section-heading .heading-line {
+	margin:0 auto;
+	display: block;
+	height: 1px;
+	width: 80px;
+	background: #333;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/*======================================
 //--//-->   INTRO
 ======================================*/
 
@@ -195,25 +224,6 @@ section {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-
-.section-heading {
-	margin-bottom: 50px;
-}
-
-.section-heading {
-	font-size: 38px;
-	text-transform: uppercase;
-}
-
-.section-heading .heading-line {
-	margin:0 auto;
-	display: block;
-	height: 1px;
-	width: 80px;
-	background: #333;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
 
 #about .about-img {
   height: 350px;
