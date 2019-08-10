@@ -18,7 +18,7 @@
 			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
 		}
 	});
-	
+
 		/*--/ Star Typed /--*/
 	if ($('.text-slider').length == 1) {
 	var typed_strings = $('.text-slider-items').text();
@@ -30,5 +30,7 @@
 			backSpeed: 30
 		});
 	}
+
+	  new WOW().init();
 
 })(jQuery);
