@@ -85,7 +85,7 @@
 		}
 	});
 
-	$('body').scrollspy({ target: '#navbarDefault', offset: 50 });
+	// $('body').scrollspy({ target: '#navbarDefault', offset: 50 });
 
 	new WOW().init();
 
