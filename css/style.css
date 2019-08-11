@@ -137,7 +137,7 @@ section {
 .section-heading h2 {
 	font-size: 38px;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: center3;
 }
 
 .section-heading .heading-line {
@@ -148,6 +148,15 @@ section {
 	background: #333;
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+hr {
+	border: 0;
+	clear:both;
+	display:block;
+	width: 96%;
+	background-color:#d02120;
+	height: 1px;
 }
 
 /*======================================
@@ -206,7 +215,7 @@ nav.navbar.fixed-to-top{
 }
 
 .navbar-default {
-  background: #a9a9a9;
+	background: #a9a9a9;
 }
 
 /*======================================
