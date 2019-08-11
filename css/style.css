@@ -219,7 +219,7 @@ nav.navbar.fixed-to-top{
 	background: #a9a9a9;
 }
 
-#myNav li.current > a {
+#myNav li.current a {
     color: #d02120;
 }
 
