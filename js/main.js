@@ -1,5 +1,7 @@
 (function ($) {
 	"use strict";
+	var nav = $('nav');
+	var navHeight = nav.outerHeight();
 
 	$(window).trigger('scroll');
 	$(window).on('scroll', function () {
@@ -80,7 +82,12 @@
 			$(window).scroll(function () {
 				navbar();
 			});
-		}		
+		}
+	});
+
+	$('body').scrollspy({
+	target: '#mainNav',
+	offset: navHeight
 	});
 
 	new WOW().init();
