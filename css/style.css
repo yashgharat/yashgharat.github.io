@@ -378,14 +378,10 @@ nav.navbar.fixed-to-top{
   padding: 1.5rem 0;
 }
 
-.socials ul li {
-  display: inline-block;
-}
-
 .socials .ico-circle {
-  height: 40px;
-  width: 40px;
-  font-size: 1.7rem;
+  height: 75px;
+  width: 150px;
+  font-size: 3rem;
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
@@ -394,7 +390,7 @@ nav.navbar.fixed-to-top{
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: #d02120;
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
