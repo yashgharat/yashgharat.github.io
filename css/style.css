@@ -29,11 +29,6 @@ a:hover {
 	transition: all 0.5s ease-in-out;
 }
 
-abbr {
-	color: #d02120;
-	background-color: f5f5f5;
-}
-
 .p-r {
 	position: relative;
 }
