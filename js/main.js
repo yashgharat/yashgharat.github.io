@@ -85,7 +85,7 @@
 		}
 	});
 
-	$('body').scrollspy({target: '#myNav', offset: navHeight});
+	$('body').scrollspy({target: '#navigation', offset: navHeight});
 
 	new WOW().init();
 
