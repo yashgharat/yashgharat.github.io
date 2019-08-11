@@ -130,12 +130,12 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #18d26e;
+  background: #d02120;
 }
 
 #home .btn-download:hover {
   background: #fff;
-  color: #18d26e;
+  color: #d02120;
 }
 
 /*======================================
