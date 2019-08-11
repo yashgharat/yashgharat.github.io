@@ -86,7 +86,7 @@
 	});
 
 	$('body').scrollspy({
-	target: '#mainNav',
+	target: '#myNav',
 	offset: navHeight
 	});
 
