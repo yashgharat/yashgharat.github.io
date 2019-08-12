@@ -118,7 +118,7 @@ section {
 	margin-top: 30px
 }
 
-#home .btn-download {
+#project #home .btn-download {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -133,7 +133,7 @@ section {
   background: #d02120;
 }
 
-#home .btn-download:hover {
+#project #home .btn-download:hover {
   background: #fff;
   color: #d02120;
 }
