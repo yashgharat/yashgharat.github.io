@@ -139,6 +139,12 @@ section {
 }
 
 /*======================================
+//--//-->   SOCIALS
+======================================*/
+
+
+
+/*======================================
 //--//-->   HOME-SECTIONS
 ======================================*/
 
@@ -368,30 +374,4 @@ nav.navbar.fixed-to-top{
 
 #about .content p:last-child {
 	margin-bottom: 0;
-}
-
-/*======================================
-//--//-->   SOCIALS
-======================================*/
-
-.socials {
-  padding: 1.5rem;
-}
-
-.socials .ico-circle {
-  height: 200px;
-  width: 200px;
-  font-size: 3rem;
-  border-radius: 50%;
-  line-height: 4;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #d02120;
-  transition: all 500ms ease;
-}
-
-.socials .ico-circle:hover {
-  background-color: #d02120;
-  color: #fff;
-  box-shadow: 0 0 0 6px pink;
-  transition: all 500ms ease;
 }
