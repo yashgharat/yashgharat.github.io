@@ -150,7 +150,7 @@ section {
 
 /* --- heading --- */
 .section-heading {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	text-align: center;
 	color: white;
 }
@@ -375,7 +375,7 @@ nav.navbar.fixed-to-top{
 ======================================*/
 
 .socials {
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 }
 
 .socials .ico-circle {
@@ -392,6 +392,6 @@ nav.navbar.fixed-to-top{
 .socials .ico-circle:hover {
   background-color: #d02120;
   color: #fff;
-  box-shadow: 0 0 0 10px pink;
+  box-shadow: 0 0 0 6px pink;
   transition: all 500ms ease;
 }
