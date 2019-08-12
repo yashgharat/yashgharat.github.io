@@ -118,7 +118,7 @@ section {
 	margin-top: 30px
 }
 
-#project #home .btn-download {
+#home .btn-download {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -133,7 +133,27 @@ section {
   background: #d02120;
 }
 
-#project #home .btn-download:hover {
+#home .btn-download:hover {
+  background: #fff;
+  color: #d02120;
+}
+
+#project .btn-download {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #d02120;
+}
+
+#project .btn-download:hover {
   background: #fff;
   color: #d02120;
 }
