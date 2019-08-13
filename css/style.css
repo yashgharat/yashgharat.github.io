@@ -139,10 +139,6 @@ section {
 }
 
 #project .btn-download {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
   margin-top: 30px;
   display: inline-block;
   padding: 8px 32px;
