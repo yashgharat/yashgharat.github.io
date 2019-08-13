@@ -147,10 +147,6 @@ section {
   background: #d02120;
 }
 
-.fa-github {
-  border: 1px solid red;
-}
-
 #project .btn-download:hover {
   background: #fff;
 }
