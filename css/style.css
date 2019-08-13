@@ -140,10 +140,10 @@ section {
 #project .btn-download {
   margin-top: 30px;
   display: inline-block;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 50px;
   transition: 0.5s;
   background: #d02120;
