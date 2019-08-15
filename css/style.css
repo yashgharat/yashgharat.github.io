@@ -470,23 +470,23 @@ nav.navbar.fixed-to-top{
   shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-#portfolio h1, #portfolio h2 {
+#innards h1, #innards h2 {
   font-family: 'Arapey';
   font-style: italic;
   font-weight: 400;
 }
 
-#portfolio h1 {
+#innards h1 {
   margin-top: 90px;
   text-align: center;
   font-size: 56px;
   color: #242424;
 }
 
-#portfolio h2 {
+#innards h2 {
   font-size: 32px;
 }
-#portfolio h2:before, #portfolio h2:after {
+#innards h2:before, #innards h2:after {
   display: inline-block;
   margin: 0 0.5em;
   width: 0.75em;
