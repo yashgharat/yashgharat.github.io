@@ -470,7 +470,7 @@ nav.navbar.fixed-to-top{
   shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-#portfolio h1, h2 {
+#portfolio h1, #portfolio h2 {
   font-family: 'Arapey';
   font-style: italic;
   font-weight: 400;
@@ -486,7 +486,7 @@ nav.navbar.fixed-to-top{
 #portfolio h2 {
   font-size: 32px;
 }
-#portfolio h2:before, h2:after {
+#portfolio h2:before, #portfolio h2:after {
   display: inline-block;
   margin: 0 0.5em;
   width: 0.75em;
