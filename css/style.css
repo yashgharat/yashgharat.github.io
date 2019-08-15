@@ -493,7 +493,7 @@ nav.navbar.fixed-to-top{
 
 /*** SPACING AND SIZING *****************************************************************/
 
-@media (min-width:1201px) {  /* <- 2-3  hexagons per row */
+@media (min-width:700px) {  /* <- 2-3  hexagons per row */
   .hex {
     width: 32.666%;    /* = (100-2) / 3 */
     padding-bottom: 37.720%;    /* =  width / sin(60) */
