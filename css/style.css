@@ -1,13 +1,11 @@
 /*======================================
 //--//-->   IMPORTS
 ======================================*/
-
 @import url('bootstrap.min.css');
 
 /*======================================
 //--//-->   STYLES GENERALES
 ======================================*/
-
 body {
 	background-color: black;
 	position: relative;
@@ -112,60 +110,51 @@ a:hover {
 	display: table-cell;
 	vertical-align: middle;
 }
-
-section {
-	margin-top: 30px
-}
-
 #home .btn-download {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-top: 30px;
-  display: inline-block;
-  padding: 8px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #fff;
-  background: #d02120;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	display: inline-block;
+	padding: 8px 32px;
+	border-radius: 50px;
+	transition: 0.5s;
+	margin: 10px;
+	color: #fff;
+	background: #d02120;
 }
 
 #home .btn-download:hover {
-  background: #fff;
-  color: #d02120;
+	background: #fff;
+	color: #d02120;
 }
 
 #project .btn-download {
-  margin-top: 30px;
-  display: inline-block;
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 50px;
-  transition: 0.5s;
-  background: #d02120;
+	margin-top: 30px;
+	display: inline-block;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 50px;
+	transition: 0.5s;
+	background: #d02120;
 }
 
 #project .btn-download:hover {
-  background: #fff;
+	background: #fff;
 }
 
 /*======================================
 //--//-->   SOCIALS
 ======================================*/
-
-
-
 /*======================================
 //--//-->   HOME-SECTIONS
 ======================================*/
-
 .home-section {
 	width: 100%;
-	padding: 150px 0px 150px 0px;
+	padding: 60px 0px 60px 0px;
 	color: white;
 }
 
@@ -183,7 +172,7 @@ section {
 }
 
 .section-heading .heading-line {
-	margin:0 auto;
+	margin: 0 auto;
 	display: block;
 	height: 1px;
 	width: 80px;
@@ -194,18 +183,17 @@ section {
 
 hr {
 	border: 0;
-	clear:both;
-	display:block;
+	clear: both;
+	display: block;
 	width: 96%;
-	background-color:#d02120;
+	background-color: #d02120;
 	height: 3px;
 }
 
 /*======================================
 //--//-->   NAVBAR
 ======================================*/
-
-nav.navbar{
+nav.navbar {
 	position: fixed;
 	top: -72px;
 	margin-bottom: 0px;
@@ -215,15 +203,15 @@ nav.navbar{
 	transition: all 0.2s;
 }
 
-.navbar-nav{
+.navbar-nav {
 	float: right;
 }
 
-nav.navbar.fixed-to-top{
+nav.navbar.fixed-to-top {
 	top: 0px;
 }
 
-.navbar-default{
+.navbar-default {
 	border: none;
 	border-bottom: none;
 	opacity: 1;
@@ -237,7 +225,7 @@ nav.navbar.fixed-to-top{
 	text-transform: uppercase;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #d02120;
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
@@ -249,7 +237,7 @@ nav.navbar.fixed-to-top{
 }
 
 /* brand / logo */
-.navbar-default .navbar-brand{
+.navbar-default .navbar-brand {
 	color: #d02120;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -265,13 +253,12 @@ nav.navbar.fixed-to-top{
 }
 
 #myNav li.current a {
-    color: #d02120;
+	color: #d02120;
 }
 
 /*======================================
 //--//-->   INTRO
 ======================================*/
-
 .intro {
 	height: 100vh;
 	position: relative;
@@ -344,7 +331,6 @@ nav.navbar.fixed-to-top{
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-
 #about .about-img {
 	height: 350px;
 	overflow: hidden;
@@ -360,6 +346,7 @@ nav.navbar.fixed-to-top{
 	#about .about-img {
 		height: auto;
 	}
+
 	#about .about-img img {
 		margin-left: 0;
 		padding-bottom: 30px;
@@ -396,159 +383,193 @@ nav.navbar.fixed-to-top{
 ======================================*/
 /* Hexagons */
 #hexGrid {
-  overflow: hidden;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0.866% 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0.866% 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
 }
 
 #hexGrid:after {
-  content: "";
-  display: block;
-  clear: both;
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .hex {
-  position: relative;
-  list-style-type: none;
-  float: left;
-  overflow: hidden;
-  visibility: hidden;
-  outline: 1px solid transparent;  /* fix for jagged edges in FF on hover transition */
-  transform: rotate(-60deg) skewY(30deg) translatez(-1px);
+	position: relative;
+	list-style-type: none;
+	float: left;
+	overflow: hidden;
+	visibility: hidden;
+	outline: 1px solid transparent;
+	/* fix for jagged edges in FF on hover transition */
+	transform: rotate(-60deg) skewY(30deg) translatez(-1px);
 }
 
 .hex * {
-  position: absolute;
-  visibility: visible;
-  outline: 1px solid transparent;  /* fix for jagged edges in FF on hover transition */
+	position: absolute;
+	visibility: visible;
+	outline: 1px solid transparent;
+	/* fix for jagged edges in FF on hover transition */
 }
 
 .hexIn {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-  transform: skewY(-30deg) rotate(60deg);
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	overflow: hidden;
+	transform: skewY(-30deg) rotate(60deg);
 }
 
-
 /*** HEX CONTENT **********************************************************************/
-
 .hex img {
-  left: -100%;
-  right: -100%;
-  width: auto;
-  height: 100%;
-  margin: 0 auto;
+	left: -100%;
+	right: -100%;
+	width: auto;
+	height: 100%;
+	margin: 0 auto;
 }
 
 .hex h1,
 .hex p {
-  margin: 0;
-  width: 102%;
-  left: -1%;  /* prevent line on the right where background doesn't cover image */
-  padding: 5%;
-  box-sizing: border-box;
-  background-color: rgba(0, 128, 128, 0.8);
-  font-weight: 300;
-  transition: transform .2s ease-out, opacity .3s ease-out;
+	margin: 0;
+	width: 102%;
+	left: -1%;
+	/* prevent line on the right where background doesn't cover image */
+	padding: 5%;
+	box-sizing: border-box;
+	background-color: rgba(0, 128, 128, 0.8);
+	font-weight: 300;
+	transition: transform .2s ease-out, opacity .3s ease-out;
 }
 
 .hex h1 {
-  bottom: 50%;
-  padding-top: 50%;
-  font-size: 1.5em;
-  z-index: 1;
-  transform: translateY(-100%) translatez(-1px);
+	bottom: 50%;
+	padding-top: 50%;
+	font-size: 1.5em;
+	z-index: 1;
+	transform: translateY(-100%) translatez(-1px);
 }
 
 .hex h1:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  width: 10%;
-  text-align: center;
-  border-bottom: 1px solid #fff;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	width: 10%;
+	text-align: center;
+	border-bottom: 1px solid #fff;
 }
 
 .hex p {
-  top: 50%;
-  padding-bottom: 50%;
-  transform: translateY(100%) translatez(-1px);
+	top: 50%;
+	padding-bottom: 50%;
+	transform: translateY(100%) translatez(-1px);
 }
-
 
 /*** HOVER EFFECT  **********************************************************************/
-
 .hexIn:hover h1, .hexIn:focus h1, .hexIn:hover p, .hexIn:focus p {
-  transform: translateY(0%) translatez(-1px);
+	transform: translateY(0%) translatez(-1px);
 }
-
 
 /*** SPACING AND SIZING *****************************************************************/
+@media (min-width:1201px) {
 
-@media (min-width:700px) {  /* <- 2-3  hexagons per row */
-  .hex {
-    width: 32.666%;    /* = (100-2) / 3 */
-    padding-bottom: 37.720%;    /* =  width / sin(60) */
-  }
-  .hex:nth-child(5n+1),
-  .hex:nth-child(5n+2) {
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
-  }
-  .hex:nth-child(5n+3),
-  .hex:nth-child(5n+4),
-  .hex:nth-child(5n+5) {
-    margin-top: -8.564%;
-    margin-bottom: -8.564%;
-  }
-  .hex:nth-child(5n+2),
-  .hex:nth-child(5n+4) {
-    margin-right: 1%;
-    margin-left: 1%;
-  }
-  .hex:nth-child(5n+1) {
-    margin-left: 0.5%;
-  }
-  .hex:nth-child(5n+3),
-  .hex:nth-child(5n+6) {
-    clear: left;
-  }
+	/* <- 2-3  hexagons per row */
+	.hex {
+		width: 32.666%;
+		/* = (100-2) / 3 */
+		padding-bottom: 37.720%;
+		/* =  width / sin(60) */
+	}
+
+	.hex:nth-child(5n+1),
+	.hex:nth-child(5n+2) {
+		transform: translateX(50%) rotate(-60deg) skewY(30deg);
+	}
+
+	.hex:nth-child(5n+3),
+	.hex:nth-child(5n+4),
+	.hex:nth-child(5n+5) {
+		margin-top: -8.564%;
+		margin-bottom: -8.564%;
+	}
+
+	.hex:nth-child(5n+2),
+	.hex:nth-child(5n+4) {
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+
+	.hex:nth-child(5n+1) {
+		margin-left: 0.5%;
+	}
+
+	.hex:nth-child(5n+3),
+	.hex:nth-child(5n+6) {
+		clear: left;
+	}
 }
 
-@media (max-width: 1200px) {  /* <- 1-2  hexagons per row */
-  .hex {
-    width: 49.5%;    /* = (100-1) / 2 */
-    padding-bottom: 57.158%;    /* =  width / sin(60) */
-  }
-  .hex:nth-child(3n+1) {
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
-  }
-  .hex:nth-child(3n+2),
-  .hex:nth-child(3n+3) {
-    margin-top: -13.423%;
-    margin-bottom: -13.423%;
-  }
-  .hex:nth-child(3n+1) {
-    margin-left: 0.5%
-  }
-  .hex:nth-child(3n+3) {
-    margin-left: 1%;
-  }
-  .hex:nth-child(3n+2),
-  .hex:nth-child(3n+4) {
-    clear: left;
-  }
+@media (max-width: 1200px) {
+
+	/* <- 1-2  hexagons per row */
+	.hex {
+		width: 49.5%;
+		/* = (100-1) / 2 */
+		padding-bottom: 57.158%;
+		/* =  width / sin(60) */
+	}
+
+	.hex:nth-child(3n+1) {
+		transform: translateX(50%) rotate(-60deg) skewY(30deg);
+	}
+
+	.hex:nth-child(3n+2),
+	.hex:nth-child(3n+3) {
+		margin-top: -13.423%;
+		margin-bottom: -13.423%;
+	}
+
+	.hex:nth-child(3n+1) {
+		margin-left: 0.5%
+	}
+
+	.hex:nth-child(3n+3) {
+		margin-left: 1%;
+	}
+
+	.hex:nth-child(3n+2),
+	.hex:nth-child(3n+4) {
+		clear: left;
+	}
 }
 
 @media (max-width: 400px) {
-  #hexGrid {
-    font-size: 13px;
-  }
+	#hexGrid {
+		font-size: 13px;
+	}
 }
+
+/*======================================
+//--//-->   COMMUNITY INVOLVEMENT
+======================================*/
+
+#community .h4 {
+	list-style: none;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#community p{
+	margin-bottom: 50px;
+}
+
+
+/*======================================
+//--//-->   CONTACT
+======================================*/
