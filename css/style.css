@@ -369,26 +369,35 @@ nav.navbar.fixed-to-top {
 }
 
 /*progress*/
-
-.skill-mf .lead{
+.skill-mf .lead {
 	text-align: center;
 	font-size: 40px;
 	margin-top: 30px;
 }
 
 .skill-mf span {
-  color: white;
-  margin-top: 10px;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
 }
 
-.progress{
+.skill-mf .progress {
+	background-color: #a9a9a9;
+	margin: .5rem 0 1.2rem 0;
+	border-radius: 20px 20px 20px 20px;
+	height: 1.5rem;
+}
+
+.progress {
 	margin-bottom: 10px;
 }
+
 .skill-mf .progress .progress-bar {
-  height: 1rem;
-  background-color: #d02120;
-  margin-bottom: 10px;
+	height: 1.5rem;
+	background-color: #d02120;
+	margin-bottom: 10px;
 }
+
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
@@ -413,7 +422,3 @@ nav.navbar.fixed-to-top {
 #community p {
 	margin-bottom: 50px;
 }
-
-/*======================================
-//--//-->   CONTACT
-======================================*/
