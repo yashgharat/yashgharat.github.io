@@ -83,20 +83,6 @@ a:hover {
 	background-position: center center;
 }
 
-@media (min-width:768px) {
-    section {
-        background-image: url(section-bg.jpg);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        min-height: 725px;
-    }
-}
-
 .overlay-mf {
 	background-color: #d02120;
 }
