@@ -20,7 +20,7 @@
 			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
 		}
 	});
-	
+
 
 	/*--/ Star Typed /--*/
 	if ($('.text-slider').length == 1) {
@@ -91,3 +91,8 @@
 	new WOW().init();
 
 })(jQuery);
+
+
+baguetteBox.run('.gallery',{
+	fullscreen: false, 
+});

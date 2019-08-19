@@ -333,15 +333,10 @@ nav.navbar.fixed-to-top {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-#about .about-img {
-	height: 350px;
-	overflow: hidden;
-}
-
 #about .about-img img {
 	margin-top: 10px;
-	margin-left: -15px;
-	max-width: 100%;
+	margin-left: 80px;
+	max-width: 75%;
 }
 
 @media (max-width: 768px) {
@@ -380,17 +375,44 @@ nav.navbar.fixed-to-top {
 	margin-bottom: 0;
 }
 
+/*progress*/
+
+.skill-mf .lead{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 30px;
+}
+
+.skill-mf span {
+  color: white;
+  margin-top: 10px;
+}
+
+.progress{
+	margin-top: 10px;
+}
+.skill-mf .progress .progress-bar {
+  height: 1rem;
+  background-color: #d02120;
+  margin-bottom: 10px;
+}
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
-
+.lightbox img {
+	width: 100%;
+	margin-bottom: 30px;
+	transition: .2s ease-in-out;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+	max-height: 198px;
+	object-fit: cover;
+}
 
 /*======================================
 //--//-->   COMMUNITY INVOLVEMENT
 ======================================*/
 #community .h4 {
 	list-style: none;
-	
 	margin-bottom: 15px;
 	font-weight: bold;
 }
