@@ -63,9 +63,10 @@ a:hover {
 }
 
 .display-6 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 	line-height: 1.1;
+	text-align: center;
 }
 
 .avatar {
@@ -357,15 +358,23 @@ nav.navbar.fixed-to-top {
 	text-align: left;
 }
 
-#about .content p {
+#about .content .lead {
 	line-height: 35px;
-	text-align: left;
-	font-size: 20px;
+	text-align: center;
+	font-size: 25px;
 	font-style: italic;
 }
 
 #about .content p:last-child {
 	margin-bottom: 0;
+}
+
+#about .PI{
+	margin-bottom: 70px;
+}
+
+.bg-red{
+	background-color: #d02120;
 }
 
 /*progress*/
