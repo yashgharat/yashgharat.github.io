@@ -357,18 +357,11 @@ nav.navbar.fixed-to-top {
 	text-align: left;
 }
 
-#about .content h3 {
-	color: #777;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 26px;
-	font-style: italic;
-	text-align: left;
-}
-
 #about .content p {
-	line-height: 26px;
+	line-height: 35px;
 	text-align: left;
+	font-size: 20px;
+	font-style: italic;
 }
 
 #about .content p:last-child {
@@ -389,7 +382,7 @@ nav.navbar.fixed-to-top {
 }
 
 .progress{
-	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .skill-mf .progress .progress-bar {
   height: 1rem;
