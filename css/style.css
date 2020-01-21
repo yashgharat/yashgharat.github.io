@@ -386,6 +386,15 @@ abbr[data-original-title], abbr[title]
 	font-weight: bold;
 }
 
+#community ul{
+	padding: 0px;
+}
 #community p {
 	margin-bottom: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.headers {
+	text-align: center;
 }
