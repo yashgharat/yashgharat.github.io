@@ -303,9 +303,8 @@ abbr[data-original-title], abbr[title]
 ======================================*/
 #about .about-img img {
 	margin-top: 10px;
-	margin-left: 60px;
-	max-width: 75%;
-	align-items: center;
+	max-width: 60%;
+	display: flex;
 }
 
 #about .content h2 {
@@ -313,6 +312,12 @@ abbr[data-original-title], abbr[title]
 	font-weight: 300;
 	font-size: 24px;
 	text-align: left;
+}
+
+#about .content h3 {
+	text-align: center;
+	font-size: 23px;
+	padding: 0px, 15px;
 }
 
 #about .content .lead {
@@ -375,6 +380,13 @@ abbr[data-original-title], abbr[title]
 	box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
 	max-height: 198px;
 	object-fit: cover;
+}
+
+.lead {
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
 }
 
 /*======================================
