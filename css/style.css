@@ -199,8 +199,8 @@ nav.navbar.fixed-to-top {
 /* brand / logo */
 .navbar-default .navbar-brand {
 	color: #d02120;
-	padding-left: 20px;
-	font-weight: 400;
+	padding-left: 10px;
+	font-weight: bold;
 	font-size: 1.5em;
 }
 
