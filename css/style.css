@@ -199,8 +199,8 @@ nav.navbar.fixed-to-top {
 /* brand / logo */
 .navbar-default .navbar-brand {
 	color: #d02120;
-	text-transform: uppercase;
-	font-weight: 700;
+	padding-left: 20px;
+	font-weight: 400;
 	font-size: 1.5em;
 }
 
@@ -208,12 +208,17 @@ nav.navbar.fixed-to-top {
 	background: #a9a9a9;
 }
 
+
 #myNav li a {
 	color: #fff;
 }
 
 #myNav li.current a {
 	color: #d02120;
+}
+
+.nav-item {
+	text-align: right;
 }
 
 /*======================================
@@ -286,6 +291,11 @@ nav.navbar.fixed-to-top {
 
 .intro-single .breadcrumb a {
 	color: #fff;
+}
+
+abbr[data-original-title], abbr[title]
+{
+	text-decoration-color: #d02120 !important;
 }
 
 /*======================================
