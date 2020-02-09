@@ -73,6 +73,10 @@ a:hover {
 	vertical-align: middle;
 }
 
+#home h1 {
+	text-transform: uppercase;
+}
+
 #home .btn-download {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
