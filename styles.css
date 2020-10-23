@@ -1,0 +1,247 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Asap:400italic,700italic);
+
+@font-face {
+	font-family: 'Streamster';
+	src: url('assets/fonts/Streamster/Streamster.eot');
+	src: url('assets/fonts/Streamster/Streamster.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/Streamster/Streamster.woff2') format('woff2'),
+		url('assets/fonts/Streamster/Streamster.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Futura Md BT';
+	src: url('assets/fonts/Futura_Bold_Italic/FuturaBT-BoldItalic.woff2') format('woff2'),
+		url('assets/fonts/Futura_Bold_Italic/FuturaBT-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+
+/* Setup */
+:root {
+	font-size: 16px;
+	--vp-pink: #FF55F8;
+	--vp-blue: #00F0FF;
+	--vp-purple: #B967FF;
+	--vp-green: #05FFA1;
+	--vp-yellow: #FFFB96;
+}
+
+html {
+	background: radial-gradient(91.56% 91.56% at 50% 50%, #11072D 32.23%, rgba(24, 4, 80, 0.72) 100%);
+}
+
+/* Navigation */
+
+.navbar {
+	position: fixed;
+	top: 0;
+	background-color: transparent;
+	height: 7rem;
+	margin-bottom: 1rem;
+	width: 100vw;
+	text-align: center;
+	transition: background-color 600ms ease;
+}
+
+.navbar-nav {
+	display: inline-block;
+	list-style: none;
+	float: none;
+	padding: 0;
+}
+
+.navbar.scrolled {
+	background-color: #11072D !important;
+}
+
+.nav-item {
+	height: 100%;
+	padding: 1.25rem 2rem 0 2rem;
+	color: white;
+}
+
+.nav-icon {
+	color: white;
+	transition: color ease 600ms;
+	font-size: 42px !important;
+	height: 42px !important;
+	width: 42px !important;
+}
+
+.nav-icon:hover {
+	color: var(--vp-blue);
+}
+
+@media only screen and (max-width: 800px) {
+	.nav-item {
+		padding: 1.25rem 1rem 0;
+	}
+	.nav-icon {
+		font-size: 36px !important;
+		height: 36px !important;
+		width: 36px !important;
+	}
+	.navbar-nav {
+		display: inline-flex;
+	}
+	.logo p{
+		margin: 0;
+	}
+}
+
+.logo {
+	background: -webkit-linear-gradient(rgba(242, 81, 58, 1) 30%, rgba(240, 0, 138, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-right: 1.75rem;
+	padding-top: .75rem;
+	font-family: 'Streamster';
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+.nav-break {
+	border: none;
+	height: 3px;
+	color: lightgray;
+	background-color: lightgray;
+	margin: 0 30%;
+}
+
+/* Body */
+body {
+	margin: 0;
+	padding: 0;
+	color: white;
+	background: transparent;
+	height: 100vh;
+}
+
+body::-webkit-scrollbar {
+	width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: gray;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: white;
+}
+
+main {
+	margin-top: 5rem;
+	padding: 1rem;
+}
+
+.welcome-container {
+	text-align: center;
+	margin: 10px;
+}
+
+.background-img {
+	max-width: 80% !important;
+	image-rendering: pixelated;
+}
+
+@keyframes gameboy-title {
+	0% {
+		background-position: right;
+	}
+
+	99% {
+		background-position: left;
+	}
+
+	100% {
+		background-position: right;
+	}
+}
+
+.welcome-text {
+	padding-right: 5px;
+	padding: 5px;
+	font-family: 'Asap', sans-serif;
+	font-size: 15vw;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: -2px;
+	transform: skew(-5deg);
+	color: #FFFFFF;
+	-webkit-transform: skew(-5deg);
+	transform: skew(-5deg);
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 16;
+}
+
+.welcome-text.scrolled {
+	background: -webkit-linear-gradient(-15deg, #3232fc 35%, #85e367 35%, #85e367 36%, #ff52e8 36%, #ff52e8 37%, #ff0151 37%, #ff0151 38%, #f9e52e 38%, #f9e52e 42%, #FFFFFF 42%, #FFFFFF 100%);
+	background-size: 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gameboy-title 2s forwards;
+}
+
+.resume-btn {
+	text-transform: capitalize;
+}
+
+.section {
+	margin: 4rem 0;
+}
+
+.heading {
+	display: inline-block;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	line-height: 3rem;
+	letter-spacing: 1rem;
+	color: var(--vp-pink);
+	padding-bottom: 3rem !important;
+}
+
+
+.headers {
+	list-style: none;
+	padding: 0;
+	margin: 0 5rem;
+	font-size: 1rem;
+}
+
+.comm-itm {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.headers p {
+	margin-bottom: 1.75rem;
+}
+
+@media only screen and (max-width: 800px) {
+	.heading{
+		font-size: 1rem;
+		padding-bottom: 1.5rem !important;
+	}
+	.headers {
+		font-size: .5rem;
+		margin: 0 1rem;
+	}
+	.comm-itm {
+		font-size: 1rem;
+	}
+}
+
+.nes-icon.is-medium {
+	/* margin: 0 6vh; */
+	margin: 0;
+	padding: 0 6vh;
+}
+

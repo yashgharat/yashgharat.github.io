@@ -1,237 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Yash Gharat">
 	<meta name="description" content="Personal resume website">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Yash Gharat</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="lib/animate/animate.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/baguetteBox.min.css">
-	<link href="css/style.css" rel="stylesheet">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>yash gharat</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!--Material Icons  -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- Font Awesome Kit -->
+	<script src="https://kit.fontawesome.com/1b6730c88c.js" crossorigin="anonymous"></script>
+
+	<!-- NES.CSS Framework -->
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+
+	<!-- Inter font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
 </head>
-<body id="page-top" data-offset="10" data-target="#myNav" data-spy="scroll">
-	<nav id="myNav" class="navbar navbar-default navbar-expand-md fixed-to-top" role="navigation">
-		<div class="container">
-			<a class="navbar navbar-brand" href="#page-top">Yash Gharat</a>
-			<div class="navbar navbar-header">
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarDefault">
-					<i class="fas fa-bars" style="font-size:1.5em; color: #d02120"></i>
-				</button>
-			</div>
-			<div class="navigation navbar-collapse collapse justify-content-end ml-auto" id="navbarDefault">
-				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item current">
-						<a class="nav-link js-scroll" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll" href="#project">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll" href="#portfolio">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll" href="#community">Community Involvement</a>
-					</li>
-					<li></li>
-				</ul>
-			</div>
-		</div>
+
+<body>
+	<!-- Navbar-->
+	<nav class="navbar">
+		<ul class="navbar-nav">
+			<!-- <div class="container-fluid"><div class="row"></div></div> -->
+			<li class="nav-item">
+				<a href="#"><i class="nav-icon material-icons">info</i></a>
+			</li>
+			<li class="nav-item">
+				<a href="#"><i class="nav-icon material-icons">save</i></a>
+			</li>
+			<li class="logo">
+				<p>Yash Gharat</p>
+			</li>
+			<li class="nav-item">
+				<a href="#"><i class="nav-icon material-icons">group</i></a>
+			</li>
+			<li class="nav-item">
+				<a href="#"><i class="nav-icon material-icons">local_phone</i></a>
+			</li>
+		</ul>
+		<hr class="nav-break">
 	</nav>
 
-	<div id="home" class="intro route bg-image img-responsive" style="background-image: url(img/IMG_1021.jpg)">
-		<div class="overlay-intro"></div>
-		<div class="intro-content display-table">
-			<div class="table-cell">
-				<div class="container">
-					<h1 class="intro-title mb-4">welcome.</h1>
-					<p class="intro-subtitle"><span class="text-slider-items">part-time engineer,part-time artist,full-time creator</span><strong class="text-slider"></strong></p>
-					<a href="assets/Yash_Gharat_Current_Resume.pdf" target="_blank" class="btn-download scrollto">Resume/CV</a>
+	<main>
+		<div class="welcome-container">
+			<img src="./assets/images/welcome_me.png" class="background-img center-block img-responsive" alt="">
+			<span class="welcome-text">WELCOME</span>
+		</div>
+		<div class="text-center"><button type="button" class="resume-btn nes-btn is-primary">resume/cv</button></div>
+		<div class="about-me text-center section">
+			<span class="heading">【about me】</span>
+			<p>Pokemon thing will go here</p>
+		</div>
+		<div class="projects text-center section">
+			<span class="heading">【projects】</span>
+		</div>
+		<div class="comm-invo text-center section">
+			<span class="heading">【community involvement】</span>
+			<div class="container-fluid">
+				<div class="row">
+					<ul class="headers">
+						<li class="comm-itm">IEEE</li>
+						<p>Treasurer of IEEE UCF Student Chapter. Helping to organize IEEE Fall Conference with
+							the Orlando section. Team member of SoutheastCon UCF hardware team</p>
+						<li class="comm-itm">SCP Summer Bridge</li>
+						<p>Leader of a two-week Summer Bridge program which introduces incoming freshman to Stanton.
+							Leadership position involved planning/design of the program as well as overseeing its
+							execution.
+							The position also involved a volunteer selection process in which he and a team of two other
+							students selected
+							volunteers with rigorous interviews to aid the team with the execution of the Summer Bridge
+							program. He then helped
+							to coordinate over 300 students and 170 volunteers to make summer bridge a success.</p>
+						<li class="comm-itm">Knight Vertax</li>
+						<p>Leader in a school multicultural yoyo team. Leadership position includes managing a team of
+							six people to organize performances around Jacksonville for
+							various schools. He, along with another leader, organizes each performance including tricks,
+							costumes, music, and locations. This involves coordinating
+							with other people who request our performance.</p>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-	<section id="about" class="home-section">
-		<div class="container">
-			<div class="row">
-				<div class="section-heading mx-auto">
-					<h2 class="display-4">About Me</h2>
-					<hr size="8">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 about-img">
-					<img src="img/DP.jpg" class="img-fluid rounded mx-auto" alt="Responsive image">
-				</div>
-				<div id="intro-para" class="col-md-6 content align-self-center">
-					<div class="PI">
-						<h3 class="display-6">4512 Black Knight Drive Apt# 18-302-C Orlando, FL 32817</h3>
-						<h3 class="display-6">(904) 900-9864</h3>
-						<h3 class="display-6">yash.gharat@knights.ucf.edu</h3>
-					</div>
-					<p class="lead">As an undergraduate student with seemingly <abbr title="Not really but close enough">infinite</abbr>
-						taps of energy, I prefer to spend that time
-						fiddling with whatever I can, hoping
-						to stumble upon inspiration for my next
-						<abbr title="Or small, but still useful">big</abbr> creation.</p>
-				</div>
-			</div>
-			<div class="skill-mf mx-auto">
-				<p class="lead">SKILLS</p>
-				<span>JAVA/SCALA</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<span>C</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<span>PYTHON</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<span>SQL</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<span>TABLEAU</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<span>BOOTSTRAP WEB DEVELOPMENT</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<span>BLENDER</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<span>ANGULAR</span>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
+		<div class="contact-me text-center section">
+			<span class="heading">【contact me】</span>
+			<p>14766 Kristenright Ln, Orlando FL, 32826</p>
+			<p>yash.gharat@knights.ucf.edu</p>
+			<div class="social-icons">
+				<a href="#"><i class="nes-icon twitter is-medium"></i></a>
+				<a href="#"><i class="nes-icon instagram is-medium"></i></a>
+				<a href="#"><i class="nes-icon linkedin is-medium"></i></a>
 			</div>
 		</div>
-	</section>
+	</main>
 
-	<section id="project" class="home-section">
-		<div class="container">
-			<div class="row">
-				<div class="section-heading mx-auto">
-					<h2 class="display-4">Projects</h2>
-					<hr size="8">
-				</div>
-			</div>
-			<div class="row">
-				<div class="mx-auto">
-					<a href="https://github.com/yashgharat/" target="_blank" class="btn-download scrollto"> <i class="fab fa-3x fa-github"></i> </a>
-				</div>
-			</div>
-		</div>
-	</section>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+		crossorigin="anonymous"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
 
-	<section id="portfolio" class="home-section">
-		<div class="container">
-			<div class="row">
-				<div class="section-heading mx-auto">
-					<h2 class="display-4">My Works</h2>
-					<hr size="8">
-				</div>
-			</div>
-			<div class="row">
-				<div class="mx-auto content">
-					<p class="lead">Some 3D art made with Blender, an open-source software for modeling</p>
-				</div>
-			</div>
-			<div class="gallery row">
-				<div class="col-sm-6 col-md-4">
-					<a class="lightbox" href="img/portfolio/lightsaber.jpg">
-						<img src="img/portfolio/lightsaber.jpg" data-echo="img/portfolio/lightsaber.jpg" />
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<a class="lightbox" href="img/portfolio/Supreme_render.png">
-						<img src="img/portfolio/Supreme_render.png" data-echo="img/portfolio/Supreme_render.png" />
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<a class="lightbox" href="img/portfolio/fanta.jpg">
-						<img src="img/portfolio/fanta.jpg" data-echo="img/portfolio/fanta.jpg" />
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<a class="lightbox" href="img/portfolio/lego_me.png">
-						<img src="img/portfolio/lego_me.png" data-echo="img/portfolio/lego_me.png" />
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<a class="lightbox" href="img/portfolio/Spider.png">
-						<img src="img/portfolio/Spider.png" data-echo="img/portfolio/Spider.png" />
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<a class="lightbox" href="img/portfolio/room.png">
-						<img src="img/portfolio/room.png" data-echo="img/portfolio/room.png" />
-					</a>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section id="community" class="home-section">
-		<div class="comm container-fluid">
-			<div class="row">
-				<div class="section-heading mx-auto">
-					<h2 class="display-4">Community Involvement</h2>
-					<hr size="8">
-				</div>
-			</div>
-			<div class="row">
-				<ul class="headers mx-auto">
-					<li class="h4">IEEE</li>
-					<p>Treasurer of IEEE UCF Student Chapter. Helping to organize IEEE Fall Conference with
-						the Orlando section. Team member of SoutheastCon UCF hardware team</p>
-					<li class="h4">SCP Summer Bridge</li>
-					<p>Leader of a two-week Summer Bridge program which introduces incoming freshman to Stanton. Leadership position involved planning/design of the program as well as overseeing its execution.
-						The position also involved a volunteer selection process in which he and a team of two other students selected
-						volunteers with rigorous interviews to aid the team with the execution of the Summer Bridge program. He then helped
-						to coordinate over 300 students and 170 volunteers to make summer bridge a success.</p>
-					<li class="h4">Knight Vertax</li>
-					<p>Leader in a school multicultural yoyo team. Leadership position includes managing a team of six people to organize performances around Jacksonville for
-						various schools. He, along with another leader, organizes each performance including tricks, costumes, music, and locations. This involves coordinating
-						with other people who request our performance.</p>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<script src="lib/jquery/jquery.min.js"></script>
-	<script src="lib/jquery/jquery-migrate.min.js"></script>
-	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js"></script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="lib/typed/typed.min.js"></script>
-	<script src="https://kit.fontawesome.com/1b6730c88c.js"></script>
-	<script src="js/baguetteBox.min.js" async></script>
-	<!-- <script src="lib/easing/easing.min.js"></script> -->
-	<script src="js/wow.min.js"></script>
-	<script src="js/main.js"></script>
-
+	<!-- Main.js -->
+	<script src="main.js"></script>
 </body>
 
 </html>
