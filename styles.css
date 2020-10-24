@@ -34,6 +34,7 @@
 
 html {
 	background: radial-gradient(91.56% 91.56% at 50% 50%, #11072D 32.23%, rgba(24, 4, 80, 0.72) 100%);
+	width: 100vw !important;
 }
 
 /* Navigation */
@@ -80,18 +81,21 @@ html {
 
 @media only screen and (max-width: 800px) {
 	.nav-item {
-		padding: 1.25rem 1rem 0;
+		padding: 1.25rem .5rem 0;
 	}
+
 	.nav-icon {
 		font-size: 36px !important;
 		height: 36px !important;
 		width: 36px !important;
 	}
+
 	.navbar-nav {
 		display: inline-flex;
 	}
-	.logo p{
-		margin: 0;
+
+	.logo p {
+		font-size: 1rem;
 	}
 }
 
@@ -99,11 +103,9 @@ html {
 	background: -webkit-linear-gradient(rgba(242, 81, 58, 1) 30%, rgba(240, 0, 138, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	padding-right: 1.75rem;
 	padding-top: .75rem;
-	font-family: 'Streamster';
 	font-weight: 500;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 .nav-break {
@@ -111,7 +113,7 @@ html {
 	height: 3px;
 	color: lightgray;
 	background-color: lightgray;
-	margin: 0 30%;
+	margin: 0 20%;
 }
 
 /* Body */
@@ -143,6 +145,18 @@ main {
 .welcome-container {
 	text-align: center;
 	margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+	main {
+		padding: 0	;
+		overflow: hidden;
+	}
+
+	.welcome-container {
+		text-align: center;
+		margin: 4vh 0;
+	}
 }
 
 .background-img {
@@ -225,23 +239,36 @@ main {
 	margin-bottom: 1.75rem;
 }
 
+.nes-icon.instagram {
+	margin: 0 6rem;
+}
+
+.nes-icon.is-medium {
+	margin: 0;
+	padding: 0;
+}
+
 @media only screen and (max-width: 800px) {
-	.heading{
+	.heading {
 		font-size: 1rem;
 		padding-bottom: 1.5rem !important;
 	}
+
 	.headers {
 		font-size: .5rem;
 		margin: 0 1rem;
 	}
+
 	.comm-itm {
 		font-size: 1rem;
 	}
-}
 
-.nes-icon.is-medium {
-	/* margin: 0 6vh; */
-	margin: 0;
-	padding: 0 6vh;
+	.nes-icon.instagram {
+		margin: 0 3rem;
+	}
+	
+	.contact-info {
+		font-size: .5rem;
+	}
 }
 
