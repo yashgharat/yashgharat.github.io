@@ -225,7 +225,12 @@ main {
 	padding-bottom: 3rem !important;
 }
 
+.pokemon-container{
+	justify-content: center;
+	display: flex;
+}
 
+/* Community Involvement */
 .headers {
 	list-style: none;
 	padding: 0;
