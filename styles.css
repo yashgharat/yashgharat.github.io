@@ -21,6 +21,14 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Emerald';
+	src: url('assets/fonts/Emerald/Pokmon-Emerald-Pro.woff2') format('woff2'),
+		url('assets/fonts/Emerald/Pokmon-Emerald-Pro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 
 /* Setup */
 :root {
@@ -225,9 +233,80 @@ main {
 	padding-bottom: 3rem !important;
 }
 
-.pokemon-container{
-	justify-content: center;
-	display: flex;
+.pokemon-container {
+	margin: 0 auto;
+	padding: 2rem 0;
+	width: 75vw;
+	display: flexbox;
+}
+
+
+.pokemon-text {
+	font-family: 'Emerald';
+	font-size: 1.5rem;
+}
+
+.pokemon-pagination {
+	background: -webkit-linear-gradient(left, #BD69D6 32%, #D692F7 36%, #D692F7 62%, #FFE3FF 66%, #FFE3FF 100%);
+	padding: 0 0.5rem;
+	height: 6vh;
+}
+
+.pokemon-pagination .start {
+	text-align: start;
+}
+
+.pokemon-pagination .middle {
+	text-align: center;
+}
+
+.pokemon-pagination .end {
+	text-align: end;
+	color: black;
+}
+
+.pokemon-body {
+	height: 70vh;
+	background: #006963;
+}
+
+.pokemon-showcase {
+	height: 65vh;
+	background: #9CDBA5;
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: medium;
+	border-color: #63B28C;
+}
+
+.pokemon-info {
+	height: 67vh;
+	margin-top: 3vh;
+	border-width: medium;
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+
+@media only screen and (max-width: 800px) {
+	.pokemon-pagination {
+		height: 3vh;
+	}
+
+	.pokemon-text {
+		font-size: 1rem;
+	}
+
+	.pokemon-body {
+		height: 40vh;
+	}
+
+	.pokemon-showcase {
+		height: 35vh;
+		background: #9CDBA5;
+	}
 }
 
 /* Community Involvement */
