@@ -246,6 +246,12 @@ main {
 	font-size: 1.5rem;
 }
 
+.pokemon-text .gen {
+	text-shadow: 2px 0px gray;
+	margin: 0;
+	padding: 0;
+}
+
 .pokemon-pagination {
 	background: -webkit-linear-gradient(left, #BD69D6 32%, #D692F7 36%, #D692F7 62%, #FFE3FF 66%, #FFE3FF 100%);
 	padding: 0 0.5rem;
@@ -254,6 +260,7 @@ main {
 
 .pokemon-pagination .start {
 	text-align: start;
+	text-shadow: 2px 0px gray;
 }
 
 .pokemon-pagination .middle {
@@ -263,6 +270,7 @@ main {
 .pokemon-pagination .end {
 	text-align: end;
 	color: black;
+	text-shadow: 2px 0px lightgray;
 }
 
 .pokemon-body {
@@ -273,6 +281,7 @@ main {
 .pokemon-showcase {
 	height: 65vh;
 	background: #9CDBA5;
+	margin-top: 1px;
 	border-radius: 1rem;
 	border-style: solid;
 	border-width: medium;
@@ -306,6 +315,16 @@ main {
 	.pokemon-showcase {
 		height: 35vh;
 		background: #9CDBA5;
+	}
+
+	.pokemon-info {
+		height: 37vh;
+		margin-top: 3vh;
+		margin-left: 1vw !important;
+		border-radius: .75rem;
+		border-style: solid;
+		border-width: medium;
+		border-color: black;
 	}
 }
 
