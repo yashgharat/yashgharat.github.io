@@ -230,13 +230,13 @@ main {
 .pokemon-container {
     margin: 0 auto;
     padding: 2rem 0;
-    width: 75vw;
+    width: 750px;
     display: flexbox;
 }
 
 .pokemon-text {
     font-family: 'Emerald';
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .pokemon-text .gen {
@@ -248,7 +248,7 @@ main {
 .pokemon-pagination {
     background: -webkit-linear-gradient(left, #BD69D6 32%, #D692F7 36%, #D692F7 62%, #FFE3FF 66%, #FFE3FF 100%);
     padding: 0 0.5rem;
-    height: 6vh;
+    height: 50px;
 }
 
 .pokemon-pagination .start {
@@ -267,12 +267,12 @@ main {
 }
 
 .pokemon-body {
-    height: 70vh;
+    height: 450px;
     background: #006963;
 }
 
 .pokemon-showcase {
-    height: 65vh;
+    height: 400px;
     background: #9CDBA5;
     margin-top: 1px;
     border-radius: 1rem;
@@ -287,9 +287,63 @@ main {
     background-color: #BD69D6;
 }
 
+.pokemon-sprite {
+    float: none !important;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to bottom, #D6D2BD,
+    #D6D2BD 50%,
+    #DEE3F7 50%,
+    #DEE3F7 50%
+    );
+    background-size: 100% 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.pokemon-name-div {
+    margin-top: 7px;
+}
+
+.pokemon-name {
+    font-family: 'Emerald';
+    font-size:2.5rem;
+    text-shadow: 2px 0px gray;
+    padding: 0;
+    margin-left: 25px;
+    line-height: 2rem;
+}
+
+.bottom-row {
+    margin: 12px auto !important;
+}
+
+.pokemon-level {
+    font-family: 'Emerald';
+    text-shadow: 2px 0px gray;
+    line-height: 1rem;
+}
+
+.lvl-pt-1{
+    font-size: 1.5rem;
+}
+
+.lvl-pt-2{
+    font-size: 2.5rem;
+}
+
+.male{
+    font-size: 3.5rem;
+    line-height: 0;
+    color: #42CAFF;
+}
+
 .pokemon-info {
-    height: 67vh;
-    margin-top: 3vh;
+    height: 430px;
+    margin-top: 20px;
     border-width: medium;
     border-radius: 1rem;
     border-style: solid;
