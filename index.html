@@ -69,14 +69,17 @@
                         </div>
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                             <div class="pokemon-text middle">
-                                <a href="#screen-1" class="screen-pagination"></a>
-                                <a href="#screen-2" class="screen-pagination"></a>
-                                <a href="#screen-3" class="screen-pagination"></a>
-                                <a href="#screen-4" class="screen-pagination"></a>
+                                <a href="#screen-1" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-1')"></a>
+                                <a href="#screen-2" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-2')"></a>
+                                <a href="#screen-3" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-3')"></a>
+                                <a href="#screen-4" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-4')"></a>
                             </div>
                         </div>
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="pokemon-text end">end</div>
+                            <div class="pokemon-text end">
+                                <span class="cancel-button">A</span>
+                                <span class="cancel-text">CANCEL</span>
+                            </div>
                         </div>
                     </div>
                     <div class="row pokemon-body">
@@ -114,7 +117,7 @@
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                             <span class="male">&#9794;</span>
-                                        </div>
+                                     </div>
                                     </div>
                                 </div>
                             </div>
