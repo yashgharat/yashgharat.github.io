@@ -181,7 +181,7 @@
     ];
 
     var tagCloud = TagCloud('.skills-content', skills, {
-      radius: 275,
+      radius: ($(window).width() < 500 ? 150 : 275),
       maxSpeed: 'fast',
       initSpeed: 'fast',
       direction: 135,
