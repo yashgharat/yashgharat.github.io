@@ -1,187 +1,563 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Yash Gharat">
-    <meta name="description" content="Personal resume website">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>yash gharat</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <title>Yash Gharat</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!--Material Icons  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/1b6730c88c.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- NES.CSS Framework -->
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <!-- Vendor CSS Files -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/github-calendar/github-calendar-responsive.css" rel="stylesheet" />
 
-    <!-- Inter font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- Navbar-->
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <!-- <div class="container-fluid"><div class="row"></div></div> -->
-            <li class="nav-item">
-                <a href="#"><i class="nav-icon material-icons">info</i></a>
-            </li>
-            <li class="nav-item">
-                <a href="#"><i class="nav-icon material-icons">save</i></a>
-            </li>
-            <li class="logo">
-                <p>Yash Gharat</p>
-            </li>
-            <li class="nav-item">
-                <a href="#"><i class="nav-icon material-icons">group</i></a>
-            </li>
-            <li class="nav-item">
-                <a href="#"><i class="nav-icon material-icons">local_phone</i></a>
-            </li>
-        </ul>
-        <hr class="nav-break">
-    </nav>
 
-    <main>
-        <div class="welcome-container">
-            <img src="./assets/images/welcome_me.png" class="background-img center-block img-responsive" alt="">
-            <span class="welcome-text">WELCOME</span>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        </li>
+        <li><a href="#blog" class="nav-link scrollto"><i class="bx bx-pen"></i> <span>Blog</span></a>
+        </li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Yash Gharat</h1>
+      <p>I'm <span class="typed" data-typed-items="an Engineer, a Developer, a Researcher, a Student"></span></p>
+      <div class="social-links">
+        <a href="https://github.com/yashgharat" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://twitter.com/ohmygosh_yash" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com/ohmygosh_yash/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yash-gharat/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="row-1" style="margin-top: 20px;"><a href="#" class="resume-btn">Resume</a></div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Hey! I'm an undergraduate computer engineer studying at the University of
+            Central Florida, and I usually geek out over computer science projects
+            and hackathons when I have free time away from my research. I am currently a
+            Software Engineer co-op at CAE USA, working on industry-level solutions for the
+            defense industry. In my free-time, I like to tinker with various software and hardware
+            projects.
+          </p>
         </div>
-        <div class="text-center"><a href="./assets/Yash Gharat Resume.pdf"><button type="button"
-					class="resume-btn nes-btn is-primary">resume/cv</button></a></div>
-        <div class="about-me text-center section">
-            <span class="heading">【about me】</span>
-            <div class="pokemon-container">
-                <div class="fluid-container row-no-gutters">
-                    <div class="row pokemon-pagination">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div id="heading" class="pokemon-text start"> POKeMON INFO</div>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="pokemon-text middle">
-                                <a href="#screen-1" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-1')"></a>
-                                <a href="#screen-2" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-2')"></a>
-                                <a href="#screen-3" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-3')"></a>
-                                <a href="#screen-4" class="screen-pagination" onclick="event.preventDefault();screenJumping('screen-4')"></a>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="pokemon-text end">
-                                <span class="cancel-button">A</span>
-                                <span class="cancel-text">CANCEL</span>
-                            </div>
-                        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.JPG" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Full-Stack Developer &amp; Researcher</h3>
+            <p class="fst-italic">
+              As a student with seemingly <abbr title="Not really but close enough">infinite</abbr>
+              taps of energy, I prefer to spend that time
+              fiddling with whatever I can, hoping
+              to stumble upon inspiration for my next
+              <abbr title="Or small, but still useful">big</abbr> creation
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(904) 900-9864</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Major:</strong> <span>Computer Engineering</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                    <span>yash.gharat@knights.ucf.edu</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Throughout my years of education, I have had my hands in just abouout anything I could find.
+              3D modeling, UI/UX, app dev, web dev, hardware, software, and machine learning. More than just my thirst
+              for knowledge, I have been looking for a problem to solve; something that will make a lasting impact and
+              that I can pour my passion and experience into. Think I can help? Please reach out!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="h4 text-center github-title">Github contributions</div>
+            <div class="calendar"></div>
+            <div class="h4 text-center github-title">Github Code Analysis</div>
+            <div class="github-skills"></div>
+          </div>
+          <div class="col-lg-6 outer-skills">
+            <div class="skills-content"></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up" data-aos-id="resume">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p><em>Passionate and problem-driven multi-paradigm developer with 3+ years of experience creating solutions
+              for various industries and clients from initial concept to final, polished deliverable.</em></p>
+          <div class="row-1" style="margin-top: 20px;"><a href="#" class="resume-btn">Download</a></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Engineer Co-op</h4>
+              <h6><a href="https://www.cae.com/cae-usa/" class="company">CAE USA</a></h6>
+              <h5>2021 - Present</h5>
+              <ul>
+                <li>Developed Q-Learning Model that leveraged sensory and communication information to make decisions
+                  regarding tasks on enemy detection</li>
+                <li>Integrated the Distributed Interactive Simulation (DIS) interface in python, MATLAB, and other DoD
+                  related software to work towards a dynamic and intelligent adaptive kill-web</li>
+                <li>Investigated the decoding of Link16 Signal Protocol Data Units (PDUs) sent via port serialization.
+                </li>
+                <li>Collaborated on a Human-Machine Teaming project that engaged in multi-domain operations to measure
+                  trust in synthetic teammates driven by complex Artificial Intelligence (AI) to improve mission
+                  outcomes</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Undergraduate Researcher</h4>
+              <h6 class="company-nosite">Unmanned Autonomous Systems (UAS) Lab</h6>
+              <h5>2020 - 2021</h5>
+              <ul>
+                <li>Implemented MATLAB algorithms to simulate autonomous UAV formation for asset protection and enemy
+                  tracking using proprietary Advanced Framework for Simulation, Integration and Modeling (AFSIM)
+                  Software.</li>
+                <li>Created a method to offload computations and scripts to MATLAB and Python to have better runtimes in
+                  scenarios.</li>
+                <li>Implemented adaptive tracking assignment using multiple factors natively in AFSIM</li>
+                <li>Developed dynamic UAV priority-based reallocation with nearest neighbors in AFSIM</li>
+                <li>Implemented Markhov Decision Processes to allocate tasks to UAVs</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Undergraduate Researcher &amp; </br> Full-Stack Developer</h4>
+              <h6><a href="https://stirlab.org/" class="company">STIR Lab</a></h6>
+              <h5>2019 - 2020</h5>
+              <ul>
+                <li>Developed Android app to aid in a PhD study that collected promoted teen online safety and
+                  integrated with an AWS backend using Cognito, S3, Lambda, and Gateway</li>
+                <li>Integrated Qualtrics API with Android and iOS mobile apps</li>
+                <li>Developed companion admin Dashboard with Angular that directly interacted with the app users</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Big Data Intern</h4>
+              <h6><a href="https://www.nlplogix.com/" class="company">NLP Logix</a></h6>
+              <h5>2017</h5>
+              <ul>
+                <li>Led a team of three people to create a presentation that analyzed crime in Jacksonville</li>
+                <li>Analyzed causes of violent crime rates by zip code and census tracts</li>
+                <li>Utilized SQL, Java, Tableau, and R Studio to understand Jacksonville Sheriff's Office (JSO) data and
+                  form evidence-based conclusions </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelors of Science in Computer Engineering</h4>
+              <h5>2018 - Present</h5>
+              <p><em>University of Central Florida, Orlando, FL</em></p>
+              <h6 class="company-nosite">Institute of Electronics and Electrical Engineers (IEEE)</h6>
+              <ul>
+                <li>Programming Lead on a competitive robot using a combination of Arduino and Raspberry Pi to perform a
+                  task involving color detection and ball retrieval.</li>
+                <li>Developed competitive robot using an arduino to press various buttons lit up in a stochastic pattern
+                </li>
+                <li>Managed account and expenses to send 10 students to Southeastcon 2021</li>
+                <li>Aided in organizing IEEE Fall Conference with the Orlando Section, hosted at UCF.</li>
+              </ul>
+              <h6 class="company-nosite">Knight Vertax</h6>
+              <p>Led school multicultural yoyo team managing a team of six people, organizing tricks, costumes, and
+                music for various performances around Jacksonville.</p>
+              <h6 class="company-nosite">Relevant Coursework</h6>
+              <div class="row">
+                <div class="col-6">
+                  <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Computer Vision</li>
+                    <li>Machine Learning</li>
+                    <li>Operating Systems</li>
+                    <li>Digital Systems</li>
+                    <li>Computer Architecture</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Software Engineering</li>
+                    <li>Linear Circuits</li>
+                    <li>Digital Design</li>
+                    <li>Enterprise Computing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="resume-item">
+              <h4>International Baccalaureate</h4>
+              <h5>2014 - 2018</h5>
+              <p><em>Stanton College Preparatory High School</em></p>
+              <h6 class="company-nosite">SCP Summer Bridge</h6>
+              <ul>
+                <li>Led two-week Summer Bridge program which introduced incoming freshman to the rigors of college prep
+                  culture.</li>
+                <li>Designed program from inital stages to the finale</li>
+                <li>hand-picked volunteers with rigorous interviews to aid in various parts of event</li>
+                <li>successfully coordinated over 300 students and 170 volunteers</li>
+              </ul>
+              <h6 class="company-nosite">Science National Honor Society</h6>
+              <p>Developed an Android app to connect tutors with tutees to help students maintain honor society
+                membership. This used Google authentication as the user base and employed Google Firebase to organize
+                the users and the request submissions real-time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Since I love keeping updated on my skills and hobbies, I am usually working on many projects.
+            Below is some of my best work.
+          </p>
+        </div>
+
+        <div class="container map-container">
+          <div class="row top-row">
+            <div class="col-4 category-container app-container justify-content-center d-flex align-items-center">
+              <div id="category-school" class="category category-school">
+              </div>
+            </div>
+            <div class="col-4 container svg-container">
+              <img id="category-root" class="img-fluid svg-content" src="assets/img/2099158.svg" alt="">
+            </div>
+            <div class="col-4 category-container work-container justify-content-center d-flex align-items-center">
+              <div id="category-work" class="category category-work">
+              </div>
+            </div>
+          </div>
+          <div class="row bot-row">
+            <div class="col-12 category-container personal-container justify-content-center d-flex align-items-center">
+              <div id="category-personal" class="category category-personal">
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectsModalTitle" aria-hidden="true"
+            role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content rounded-50">
+                <div class="modal-header">
+                  <div class="container-fluid text-center">
+                    <div class="row">
+                      <h5 class="modal-title" id="projectsModalTitle"></h5>
                     </div>
-                    <div class="row pokemon-body">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="pokemon-showcase">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-                                            <span class="pokemon-text gen" style="font-size: 2.5rem; margin-left: 25px;">No</span><span class="pokemon-text gen" style="font-size: 3rem;">001</span>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="height: 50px; position: relative; display: flex;">
-                                            <span class="shape" style="width: 20px; height: 20px;"></span>
-                                            <span class="shape" style="margin-left: 30px; width: 20px; height: 20px; border-radius: 50%;"></span>
-                                            <span class="shape" style="margin-left: 60px; width: 20px; height: 18px; transform: skew(20deg);"></span>
-                                            <span class="shape" style="margin-left: 90px; width: 20px; height: 20px;"></span>
-                                        </div>
+                    <div class="row">
+                      <a class="modal-link" id="projectsModalLink"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-body" id="projectsModalBody">
+                </div>
+                <div class="modal-footer" id="projectsModalFooter">
+                  <button type="button" class="btn-dismiss mx-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="section-title">
+        <h2>Blog</h2>
+        <p>Sometimes I have organized thoughts, sometimes I just like writing</p>
+    </div>
+    <div class="container-fluid posts-container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h5 class="blog-title">Recent Posts</h5>
+                <div class="recent-posts" id="recentPosts">
+                    <div class="container-fluid post-container" id="postContainer-1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6 post-title">
+                                        <h6 class="post-title" id="postTitle-1"></h6>
                                     </div>
-                                    <div class="row">
-                                       <div class="pokemon-sprite col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                                           <img src="./assets/images/pokemon_me_small.png" class="pokemon-me" style="margin: auto;">
-                                       </div> 
+                                    <div class="col-md-6">
+                                        <h6 class="post-date" id="postDate-1"></h6>
                                     </div>
-                                    <div class="row">
-                                        <div class="pokemon-name-div col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                                            <span class="pokemon-name">YASH</span>
-                                            <span class="pokemon-name">\GHARAT</span>
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="post-desc" id="postDesc-1">
+                                        </p>
                                     </div>
-                                    <div class="bottom-row row">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                            <img src="./assets/images/pokeball.png" alt="" class="pokeball">
-                                        </div>
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                            <span class="pokemon-level lvl-pt-1">Lv</span><span class="pokemon-level lvl-pt-2">5</span>
-                                        </div>
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                            <span class="male">&#9794;</span>
-                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="post-time" id="postTime-1"></h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="post-tags" id="postTags-1"></h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                            <div class="pokemon-info">
-                                <img src="./assets/images/screen_1.png" alt="" id="screen-1" class="screens">
-                                <img src="./assets/images/screen_2.png" alt="" id="screen-2" class="screens">
-                                <img src="./assets/images/screen_3.png" alt="" id="screen-3" class="screens">
-                                <img src="./assets/images/screen_4.png" alt="" id="screen-4" class="screens">
+                    </div>
+                    <div class="container-fluid post-container" id="postContainer-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6 post-title">
+                                        <h6 class="post-title" id="postTitle-2"></h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="post-date" id="postDate-2"></h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="post-desc" id="postDesc-2"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="post-time" id="postTime-2"></h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="post-tags" id="postTags-2"></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid post-container" id="postContainer-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6 post-title">
+                                        <h6 class="post-title" id="postTitle-3"></h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="post-date" id="postDate-3"></h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="post-desc" id="postDesc-3"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="post-time" id="postTime-3"></h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="post-tags" id="postTags-3"></h6>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="projects text-center section">
-            <span class="heading">【projects】</span>
-            <div class="text-center">
-                <a href="https://www.github.com/yashgharat"><button type="button" class="github-btn nes-btn is-primary">
-						<i class="nes-octocat animate"></i>
-						</i></button></a></div>
-        </div>
-        <div class="comm-invo text-center section">
-            <span class="heading">【community involvement】</span>
-            <div class="container-fluid">
-                <div class="row">
-                    <ul class="headers">
-                        <li class="comm-itm">IEEE</li>
-                        <p>Treasurer of IEEE UCF Student Chapter. Helping to organize IEEE Fall Conference with the Orlando section. Team member of SoutheastCon UCF hardware team</p>
-                        <li class="comm-itm">SCP Summer Bridge</li>
-                        <p>Leader of a two-week Summer Bridge program which introduces incoming freshman to Stanton. Leadership position involved planning/design of the program as well as overseeing its execution. The position also involved a volunteer selection
-                            process in which he and a team of two other students selected volunteers with rigorous interviews to aid the team with the execution of the Summer Bridge program. He then helped to coordinate over 300 students and 170 volunteers
-                            to make summer bridge a success.</p>
-                        <li class="comm-itm">Knight Vertax</li>
-                        <p>Leader in a school multicultural yoyo team. Leadership position includes managing a team of six people to organize performances around Jacksonville for various schools. He, along with another leader, organizes each performance
-                            including tricks, costumes, music, and locations. This involves coordinating with other people who request our performance.</p>
-                    </ul>
+            <div class="col-md-6 col-sm-12">
+                <div class="row-3">
+                    <h6 class="blog-title">Archive</h6>
+                    <div class="input">
+                        <input class="input-bar" id="inputBar" type="text" placeholder="Filter" onkeyup="filterPosts(this)">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="row-9">
+                    <div class="container archive-container p-0">
+                        <ul class="posts-archive" id="postsArchive">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalTitle" aria-hidden="true"
+                role="dialog">
+                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="container-fluid text-center">
+                                <div class="row">
+                                    <h5 class="modal-title" id="blogModalTitle"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body" id="blogModalBody">
+                        </div>
+                        <div class="modal-footer" id="blogModalFooter">
+                            <button type="button" class="btn-dismiss mx-auto" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="contact-me text-center section">
-            <span class="heading">【contact me】</span>
-            <p class="contact-info">14766 Kristenright Ln, Orlando FL, 32826</p>
-            <p class="contact-info">yash.gharat@knights.ucf.edu</p>
-            <div class="container social-icons">
-                <ul>
-                    <li><a href="https://twitter.com/ohmygosh_yash"><i class="nes-icon twitter is-medium"></i></a></li>
-                    <li><a href="https://www.instagram.com/ohmygosh_yash/"><i
-								class="nes-icon instagram is-medium"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/yash-gharat-aa7654184/"><i
-								class="nes-icon linkedin is-medium"></i></a></li>
-                </ul>
-            </div>
+    </div>
+    </section>
+
+    <!-- End Blog Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
         </div>
-    </main>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <div class="row info">
+          <div class="col-4 d-flex justify-content-center">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>14766 Kristenright Ln, Orlando, FL 32256</p>
+            </div>
+          </div>
 
-    <!-- Main.js -->
-    <script src="main.js"></script>
+          <div class="col-4 d-flex justify-content-center">
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>yash.gharat@knights.ucf.edu</p>
+            </div>
+          </div>
+
+          <div class="col-4 d-flex justify-content-center">
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+1 (904)900-9864</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Yash Gharat</h3>
+      <div class="social-links">
+        <a href="https://github.com/yashgharat" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://twitter.com/ohmygosh_yash" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com/ohmygosh_yash/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yash-gharat/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/tagcloud/TagCloud.min.js"></script>
+  <script src="assets/vendor/axios/axios.min.js"></script>
+  <script src="assets/vendor/github-calendar/github-calendar.min.js"></script>
+  <script src="assets/vendor/leaderline/leader-line.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <script src="  https://unpkg.com/showdown/dist/showdown.min.js"></script>
+
+  <!-- Helper JS Files -->  
+  <script src="assets/js/github_info.js"></script>
+  <script src='assets/js/projects.js'></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/blog.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>GitHubCalendar(".calendar", "yashgharat", { responsive: true });</script>
+
 </body>
 
 </html>
