@@ -1,8 +1,8 @@
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
-  space: "gbh9lcdequj5",
+  space: "68lsirfoc8yr",
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: "2fK7lWbeV2bWHfWGT7_3HcGTVh27or7cQ4bdIrRzrxo",
+  accessToken: "t8CEOJ8jgKyzFT0ThKfGt8BH7VWaMGzysMZx8ih5bfo",
 });
 
 const converter = initHTMLConverter();
