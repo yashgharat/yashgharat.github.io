@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
   client
     .getEntries({
       content_type: "post",
-      order: "-sys.createdAt",
+      order: "-sys.updatedAt",
     })
     .then((entries) => {
       postArr = entries.items;
