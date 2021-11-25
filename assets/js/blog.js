@@ -12,8 +12,8 @@ window.addEventListener("load", () => {
 
   client
     .getEntries({
-      content_type: "blogPost",
-      order: "-fields.publishDate",
+      content_type: "post",
+      order: "-sys.createdAt",
     })
     .then((entries) => {
       postArr = entries.items;
