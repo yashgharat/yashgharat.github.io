@@ -798,6 +798,15 @@ section {
   cursor: pointer;
 }
 
+.archive-title {
+  color: white;
+}
+.archive-date {
+  text-align: right;
+  color: #b8b8b8;
+  font-weight: bold;
+}
+
 #blogModalTitle {
   /* letter-spacing: 0.1em; */
   text-transform: capitalize;
@@ -806,12 +815,17 @@ section {
   font-weight: bold;
 }
 
-#blogModelBody a {
+#blogModalDate {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#blogModalBody p a {
   color: var(--vp-purple);
   text-decoration: none;
 }
 
-#blogModelBody a:hover {
+#blogModalBody p a:hover {
   color: indigo;
 }
 
