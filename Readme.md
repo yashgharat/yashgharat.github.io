@@ -10,3 +10,10 @@ Yash Gharat
 - JQuery
 - Axios
 - [Contentful](https://www.contentful.com/)
+
+## TODO
+
+- Make mindmap intuitively responsive
+- Better cover pic
+- Contact Me padding
+- 

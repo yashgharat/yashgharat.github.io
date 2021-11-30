@@ -123,7 +123,7 @@ function filterPosts(elem) {
   $("#postsArchive > li").each(function () {
     post = JSON.parse(JSON.stringify(postMap.get(this.id)));
     delete post.body;
-    if (JSON.stringify(post).search(val) > -1) {
+    if (JSON.stringify(post).toLowerCase().search(val.toLowerCase()) > -1) {
       $(this).show();
     } else {
       $(this).hide();
