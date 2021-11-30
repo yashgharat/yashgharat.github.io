@@ -64,10 +64,13 @@ window.addEventListener("load", function () {
 
 });
 
-document.addEventListener('aos:in:resume', ({ detail }) => {
-  line_school.position();
-  line_work.position();
-  line_personal.position();
+$(document).ready(function () {
+  sleep(500).then(() => {
+    line_school.position();
+    line_work.position();
+    line_personal.position();
+   });
+
 });
 
 $(document).ready(function () {
@@ -84,9 +87,14 @@ $(document).ready(function () {
   });
 });
 
-  /**
-   * Animation on scroll
-   */
-   window.addEventListener('load', () => {
+/**
+ * Animation on scroll
+ */
+  window.addEventListener('load', () => {
 
-  });
+});
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
