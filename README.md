@@ -1,6 +1,19 @@
 # Personal Website
+Yash Gharat
 
-# TODO
-- Fix LeaderLine
-- Add better cover pic
-- fix brain responsiveness
+## Technologies Used
+- HTML
+- CSS
+- Javascript
+- Bootstrap
+- [BootstrapMade](https://bootstrapmade.com/)
+- JQuery
+- Axios
+- [Contentful](https://www.contentful.com/)
+
+## TODO
+
+- Make mindmap intuitively responsive
+- Better cover pic
+- Contact Me padding
+- Leader Line fix
