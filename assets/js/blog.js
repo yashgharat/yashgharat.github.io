@@ -13,27 +13,34 @@ window.addEventListener("load", () => {
   client
     .getEntries({
       content_type: "post",
-      order: "-sys.updatedAt",
+      order: "-sys.createdAt",
     })
     .then((entries) => {
       postArr = entries.items;
       postArr.forEach((entry) => {
         console.log(entry);
         var item = document.createElement("li");
-        item.appendChild(document.createTextNode(entry.fields.title));
         item.setAttribute("class", "archive-item");
         item.setAttribute("id", entry.sys.id);
+		var createdAt = new Date(entry.sys.createdAt).toISOString().split("T")[0];
+        item.innerHTML = '<div class="container-fluid p-0">'
+							+ '<div class="row">'
+								+ '<div class="col-8 archive-title">' + entry.fields.title + "</div>"
+								+ '<div  class="col-4 archive-date">' + createdAt +"</div>"
+							+ '</div>'
+						+'</div>'
 
         archiveList.append(item);
 
         $("#" + entry.sys.id).click(() => {
-            clickedPost = postMap.get(entry.sys.id);
-            document.getElementById("blogModalTitle").innerHTML =
-              clickedPost.title;
-            document.getElementById("blogModalBody").innerHTML =
-              converter.makeHtml(clickedPost.body);
-            $("#blogModal").modal("show");
-          });
+          clickedPost = postMap.get(entry.sys.id);
+          document.getElementById("blogModalTitle").innerHTML =
+            clickedPost.title;
+          document.getElementById("blogModalBody").innerHTML =
+            converter.makeHtml(clickedPost.body);
+          $("#navbar").hide();
+          $("#blogModal").modal("show");
+        });
       });
 
       postMap = new Map(postArr.map((post) => [post.sys.id, post.fields]));
@@ -45,6 +52,12 @@ window.addEventListener("load", () => {
     .catch((err) => console.log(err));
 });
 
+$(document).ready(function () {
+  var modal = document.getElementById("blogModal");
+  modal.addEventListener("hidden.bs.modal", function (event) {
+    $("#navbar").show();
+  });
+});
 
 // Helper Functions
 
@@ -73,14 +86,14 @@ function fillPost(post, i) {
   time = document.getElementById("postTime-" + i);
   tags = document.getElementById("postTags-" + i);
 
-  var updatedAt = new Date(post.sys.updatedAt).toISOString().split("T")[0];
+  var createdAt = new Date(post.sys.createdAt).toISOString().split("T")[0];
 
   postTags = Array.from(post.fields.tags)
     .map((tag) => "#" + tag)
     .join(" ");
 
   title.innerHTML = post.fields.title;
-  date.innerHTML = updatedAt;
+  date.innerHTML = createdAt;
   desc.innerHTML = post.fields.description;
   time.innerHTML = getReadTime(post.fields.body) + " min read";
   tags.innerHTML = postTags;
@@ -88,9 +101,11 @@ function fillPost(post, i) {
   $("#" + container.id).click(() => {
     clickedPost = postMap.get(post.sys.id);
     document.getElementById("blogModalTitle").innerHTML = clickedPost.title;
+    document.getElementById("blogModalDate").innerHTML = createdAt
     document.getElementById("blogModalBody").innerHTML = converter.makeHtml(
       clickedPost.body
     );
+    $("#navbar").hide();
     $("#blogModal").modal("show");
   });
 }
@@ -103,16 +118,15 @@ function getReadTime(body) {
 }
 
 function filterPosts(elem) {
-    var val = $(elem).val();
+  var val = $(elem).val();
 
-    $("#postsArchive > li").each(function() {
-        post = JSON.parse(JSON.stringify(postMap.get(this.id)));
-        delete post.body
-        if (JSON.stringify(post).search(val) > -1) {
-            $(this).show();
-        }
-        else {
-            $(this).hide();
-        }
-    });
+  $("#postsArchive > li").each(function () {
+    post = JSON.parse(JSON.stringify(postMap.get(this.id)));
+    delete post.body;
+    if (JSON.stringify(post).toLowerCase().search(val.toLowerCase()) > -1) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
 }
