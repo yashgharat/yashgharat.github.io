@@ -1,28 +1,14 @@
 /*--------------------------------------------------------------
-# General
+# Global
 --------------------------------------------------------------*/
-body {
-  font-family: "Open Sans", sans-serif;
-  color: lightgray;
-  background: #45505b;
-}
-
-a {
-  color: indigo;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #067ded;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-}
-
 :root {
   font-size: 16px;
+  --background: #171717;
+  --primary-text: #EAEAEA;
+  --primary: #58AFFF;
+  --secondary: #00447C;
+
+
   --vp-pink: #FF55F8;
   --vp-blue: #00F0FF;
   --vp-purple: #B967FF;
@@ -31,81 +17,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-text);
+  background: var(--background);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
+  background: var(--primary);
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 1.5rem;
+  bottom: 1.5rem;
   z-index: 996;
-  background: indigo;
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50px;
   transition: all 0.4s;
 }
 .back-to-top i {
-  font-size: 28px;
-  color: #fff;
+  font-size: 3rem;
+  color: var(--primary-text);
   line-height: 0;
 }
 .back-to-top:hover {
-  background: var(--vp-purple);
-  color: #fff;
+  background: var(--secondary);
+  color: var(--primary-text);
 }
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #45505b;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid var(--vp-purple);
-  border-top-color: #45505b;
-  border-bottom-color: #45505b;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -245,36 +208,20 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") right no-repeat, 
-    linear-gradient(90deg, rgba(185,103,255,1) 35%,  rgba(255,85,248,1) 75%);
   background-size: contain;
   background-blend-mode: darken;
   position: relative;
 }
-@media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
-  }
-}
-#hero:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+
 #hero h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  /* color: #45505b; */
-  color: var(black)
+  color: white;
 }
 #hero p {
-  color: #45505b;
+  color: white;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;

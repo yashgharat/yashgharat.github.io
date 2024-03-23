@@ -43,7 +43,7 @@ httpGetRequest("https://api.github.com/users/yashgharat/repos").then((res) => {
         portion = ((language_counts[language] / total) * 100).toFixed(0);
         //language_portions[language] = portion
         // TODO create progess bars here
-        if (portion > 5) {
+        if (portion > 3) {
           progressbars +=
             '<div class="progress">' +
             '<span class="skill">' +

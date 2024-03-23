@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
     .then((entries) => {
       postArr = entries.items;
       postArr.forEach((entry) => {
-        console.log(entry);
+        // console.log(entry);
         var item = document.createElement("li");
         item.setAttribute("class", "archive-item");
         item.setAttribute("id", entry.sys.id);
