@@ -568,6 +568,11 @@ section {
   background: var(--primary);
 }
 
+#portfolio .projects-btn:hover {
+  background: var(--secondary);
+  color: var(--primary-text);
+}
+
 #portfolio .projects-btn i {
   padding-right: 0.5rem;
 }
