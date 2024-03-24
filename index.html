@@ -22,7 +22,6 @@
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- <link href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" rel="stylesheet" /> -->
@@ -36,20 +35,19 @@
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list modbile-nav-toggle d-xl-none"></i>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house-door-fill"></i> <span>Home</span></a></li>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house-door-fill"></i> <span>Home</span></a>
+        </li>
         <li><a href="#about" class="nav-link scrollto"><i class="bi bi-person-fill"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-kanban-fill"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bi bi-archive-fill"></i> <span>Portfolio</span></a>
         </li>
-        <li><a href="#blog" class="nav-link scrollto"><i class="bi bi-pen-fill"></i> <span>Blog</span></a>
-        </li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope-fill"></i> <span>Contact</span></a></li>
+        <li><a href="#blog" class="nav-link scrollto"><i class="bi bi-pen-fill"></i> <span>Blog</span></a></li>
       </ul>
     </nav>
 
@@ -58,7 +56,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container">
+    <div class="container text-center">
       <h1>Yash Gharat</h1>
       <p>I'm <span class="typed" data-typed-items="an Engineer, a Developer, a Researcher, a Student"></span></p>
       <div class="social-links">
@@ -67,8 +65,7 @@
         <a href=" https://www.instagram.com/ohmygosh_yash/" class="instagram"><i class="bi bi-instagram""></i></a>
         <a href=" https://www.linkedin.com/in/yash-gharat/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
-      <div class="row-1" style="margin-top: 20px;"><a href="assets/Yash_Gharat_Resume_2021.pdf"
-          class="resume-btn">Resume</a></div>
+      <div class="resume-link"><a href="assets/resume.pdf" class="resume-btn">Resume</a></div>
     </div>
   </section><!-- End Hero -->
 
@@ -80,12 +77,12 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Hey! I'm an undergraduate computer engineer studying at the University of
-            Central Florida, and I usually geek out over computer science projects
-            and hackathons when I have free time away from my research. I am currently a
-            Software Engineer co-op at CAE USA, working on industry-level solutions for the
-            defense industry. In my free-time, I like to tinker with various software and hardware
-            projects.
+          <p class="description-text">Hey! I'm an graduate machine learning scientist studying at the University of
+            Central Florida,
+            and I usually geek out over computer science projects and hackathons when I have free time away
+            from my research. I am currently a Software Engineer at CAE USA, working on industry-level solutions
+            for various players in the DoD space. In my free-time, I like to tinker with various
+            software and hardware technologies hoping to stumble upon inspiration for my next big creation.
           </p>
         </div>
 
@@ -95,19 +92,12 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Full-Stack Developer &amp; Researcher</h3>
-            <p class="fst-italic">
-              As a student with seemingly <abbr title="Not really but close enough">infinite</abbr>
-              taps of energy, I prefer to spend that time
-              fiddling with whatever I can, hoping
-              to stumble upon inspiration for my next
-              <abbr title="Or small, but still useful">big</abbr> creation
-            </p>
-            <p>
-              Throughout my years of education, I have had my hands in just about anything I could find.
-              3D modeling, UI/UX, app dev, web dev, hardware, software, and machine learning. More than just my thirst
-              for knowledge, I have been looking for a problem to solve; something that will make a lasting impact and
-              that I can pour my passion and experience into. Think I can help? Please reach out!
-            </p>
+            <p class="description-text">
+              Throughout my years of education, I have had my hands in just about anything I could find. 3D modeling,
+              UI/UX, app dev, web dev, hardware, software, and machine learning. More than just my thirst for knowledge,
+              I have been looking for a problem to solve; something that will make a lasting impact and that I can pour
+              my passion and experience into.
+            <p class="description-text"> Think I can help? Please reach out!</p>
           </div>
         </div>
 
@@ -139,33 +129,49 @@
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
-      <div class="container"> <!-- data-aos="fade-up" data-aos-id="resume"> -->
-
+      <div class="container">
         <div class="section-title">
           <h2>Resume</h2>
-          <p><em>Passionate and problem-driven multi-paradigm developer with 3+ years of experience creating solutions
-              for various industries and clients from initial concept to final, polished deliverable.</em></p>
-          <div class="row-1" style="margin-top: 20px;"><a href="assets/Yash_Gharat_Resume_2021.pdf"
-              class="resume-btn">Download</a></div>
+          <p>Passionate and problem-driven multi-paradigm developer with 6+ years of experience creating solutions
+            for various industries and clients from initial concept to final, polished deliverable.</p>
+          <div class="row-1"><a href="assets/resume.pdf" class="resume-btn">Download</a></div>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Software Engineer Co-op</h4>
+              <h4>Application Software Engineer</h4>
               <h6><a href="https://www.cae.com/cae-usa/" class="company">CAE USA</a></h6>
-              <h5>2021 - Present</h5>
+              <h5>2022 - Present</h5>
+              <ul>
+                <li>Granted Secret Clearance</li>
+                <li>Designed the development of a comprehensive mockup in Figma, integrating a versatile component
+                  library, wireframes, and dynamic theming for a sophisticated Angular dashboard. </li>
+                <li>Developed a Multi-System Health Monitoring Dashboard in Angular with a C# backend that scraped
+                  metrics using Prometheus</li>
+                <li>Created a C++ application and library that concurrently managed receiving, decoding, and sending
+                  standardized, serialized messages to support communication between collaborating simulation software.
+                </li>
+                <li>Improved and maintained an Electron app that performed rasterization on drone imagery to create 3D
+                  models using ODM to enhance tactical knowledge of field environments.
+                </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Modeling and Simulation Co-op</h4>
+              <h6><a href="https://www.cae.com/cae-usa/" class="company">CAE USA</a></h6>
+              <h5>2021 - 2022</h5>
               <ul>
                 <li>Developed Q-Learning Model that leveraged sensory and communication information to make decisions
                   regarding tasks on enemy detection</li>
                 <li>Integrated the Distributed Interactive Simulation (DIS) interface in python, MATLAB, and other DoD
                   related software to work towards a dynamic and intelligent adaptive kill-web</li>
-                <li>Investigated the decoding of Link16 Signal Protocol Data Units (PDUs) sent via port serialization.
+                <li>Decoded of Link16 Signal Protocol Data Units (PDUs) to facilitate centralized decision-making on
+                  multiple CGFs
                 </li>
-                <li>Collaborated on a Human-Machine Teaming project that engaged in multi-domain operations to measure
-                  trust in synthetic teammates driven by complex Artificial Intelligence (AI) to improve mission
-                  outcomes</li>
+                <li>Contributed to a Human-Machine Teaming project focused on multi-domain operations, measuring trust
+                  in complex AI-driven synthetic teammates to enhance mission performance.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -176,8 +182,8 @@
                 <li>Implemented MATLAB algorithms to simulate autonomous UAV formation for asset protection and enemy
                   tracking using proprietary Advanced Framework for Simulation, Integration and Modeling (AFSIM)
                   Software.</li>
-                <li>Created a method to offload computations and scripts to MATLAB and Python to have better runtimes in
-                  scenarios.</li>
+                <li>Optimized runtimes in certain scenarios by offloading computations and scripts to MATLAB and Python.
+                </li>
                 <li>Implemented adaptive tracking assignment using multiple factors natively in AFSIM</li>
                 <li>Developed dynamic UAV priority-based reallocation with nearest neighbors in AFSIM</li>
                 <li>Implemented Markhov Decision Processes to allocate tasks to UAVs</li>
@@ -188,10 +194,11 @@
               <h6><a href="https://stirlab.org/" class="company">STIR Lab</a></h6>
               <h5>2019 - 2020</h5>
               <ul>
-                <li>Developed Android app to aid in a PhD study that collected promoted teen online safety and
-                  integrated with an AWS backend using Cognito, S3, Lambda, and Gateway</li>
+                <li>Developed Android app for a HCI PhD study that collected user data with an AWS backend using
+                  Cognito, S3, Lambda, and Gateway</li>
+                <li>Developed companion Angular Dashboard which interacted with app users to aid in study management and
+                  reward disbursement</li>
                 <li>Integrated Qualtrics API with Android and iOS mobile apps</li>
-                <li>Developed companion admin Dashboard with Angular that directly interacted with the app users</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -208,6 +215,36 @@
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Masters in computer Science, Machine Learning</h4>
+              <h5>2022 - Present</h5>
+              <p><em>University of Central Florida, Orlando, FL</em></p>
+
+              <h6 class="company-nosite">Deep System Identification</h6>
+              <p>Implemented a novel approach for state estimation in unknown nonlinear systems with noisy dynamics,
+                leveraging deep neural networks and the extended Kalman filter, addressing limitations of the Kalman
+                filter, and validated through numerical experiments on a specified class of nonlinear systems.</p>
+              <h6 class="company-nosite">Knights Raas</h6>
+              <p>Creative Director for a Indian cultural dance team that performed nationally</p>
+              <h6 class="company-nosite">Relevant Coursework</h6>
+              <div class="row">
+                <div class="col-6">
+                  <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Computer Vision</li>
+                    <li>Machine Learning</li>
+                    <li>Natural Language Processing</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>Algorithms in String Analysis</li>
+                    <li>Augmented Reality Engineering</li>
+                    <li>Network Optimization</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="resume-item">
               <h4>Bachelor's of Science in Computer Engineering</h4>
               <h5>2018 - Present</h5>
@@ -233,12 +270,11 @@
                     <li>Machine Learning</li>
                     <li>Operating Systems</li>
                     <li>Digital Systems</li>
-                    <li>Computer Architecture</li>
                   </ul>
                 </div>
                 <div class="col-6">
                   <ul>
-                    <li>Artificial Intelligence</li>
+                    <li>Computer Architecture</li>
                     <li>Software Engineering</li>
                     <li>Linear Circuits</li>
                     <li>Digital Design</li>
@@ -472,22 +508,9 @@
           <h2>Contact</h2>
         </div>
 
-        <div class="row info ">
-          <div class="col-md-6 col-sm-12">
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>yash.gharat@outlook.com</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-12">
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 (904) 900-9864</p>
-            </div>
-          </div>
+        <div class="container info text-center">
+          <span><i class="bi bi-envelope-fill"></i>yash.gharat@outlook.com</span>
+          <span><i class="bi bi-phone-fill"></i>+1 (904) 900-9864</span>
         </div>
       </div>
     </section><!-- End Contact Section -->
@@ -496,8 +519,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <h3>Yash Gharat</h3>
+    <div class="container text-center">
       <div class="social-links">
         <a href="https://github.com/yashgharat" class="github"><i class="bi bi-github"></i></a>
         <a href="https://twitter.com/ohmygosh_yash" class="twitter"><i class="bi bi-twitter-x""></i></a>
