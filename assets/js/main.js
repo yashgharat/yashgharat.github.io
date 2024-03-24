@@ -163,7 +163,7 @@
       handler: function(direction) {
         let progress = select('.progress-bar', true);
         progress.forEach((elem) => {
-          elem.style.width = elem.getAttribute('aria-valuenow')*3 + '%'
+          elem.style.width = elem.getAttribute('aria-valuenow') + '%'
         });
       }
     })
