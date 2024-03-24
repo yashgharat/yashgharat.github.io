@@ -64,6 +64,7 @@ httpGetRequest("https://api.github.com/users/yashgharat/repos").then((res) => {
       })
       .catch((err) => {
         console.error(err);
+        data = sample_languages;
         make_progress_bars(data);
       });
   }

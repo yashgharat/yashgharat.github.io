@@ -24,8 +24,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/github-calendar/github-calendar-responsive.css" rel="stylesheet">
-  <!-- <link href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" rel="stylesheet" /> -->
+  <link href="assets/vendor/gh-contrib-graph/gh.css" rel="stylesheet">
 
 
   <!-- Template Main CSS File -->
@@ -115,8 +114,10 @@
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <!-- <div class="h4 text-center github-title">Github contributions</div>
-            <div class="calendar"></div> -->
+            <div class="h4 text-center github-title d-none d-md-block">Github contributions</div>
+            <div class="calendar d-none d-md-block">
+              <div id="gh" data-login="yashgharat"></div>
+            </div>
             <div class="h4 text-center github-title">Github Code Analysis</div>
             <div class="github-skills"></div>
           </div>
@@ -544,13 +545,13 @@
   <script src="assets/vendor/axios/axios.min.js"></script>
   <script src="assets/vendor/leaderline/leader-line.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
   <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-  <script src="  https://unpkg.com/showdown/dist/showdown.min.js"></script>
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+  <script src="assets/vendor/gh-contrib-graph/gh.js"></script>
 
   <!-- Helper JS Files -->
   <script src="assets/js/sample_languages.js"></script>
@@ -561,7 +562,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <!-- <script>GitHubCalendar(".calendar", "yashgharat", { responsive: true});</script> -->
 
 </body>
 
