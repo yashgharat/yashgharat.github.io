@@ -4,7 +4,7 @@ httpGetRequest = async (url) => {
   try {
     const resp = await axios.get(url, {
       headers: {
-        Authorization: `token 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`,
+        // Authorization: `token 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`,
         "Content-Type": "application/json",
       },
     });
