@@ -4,7 +4,7 @@ httpGetRequest = async (url) => {
   try {
     const resp = await axios.get(url, {
       headers: {
-        // Authorization: `token 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`,
+        Authorization: `token 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`,
         "Content-Type": "application/json",
       },
     });
@@ -14,6 +14,7 @@ httpGetRequest = async (url) => {
     return null;
   }
 };
+// return;
 httpGetRequest("https://api.github.com/users/yashgharat/repos").then((res) => {
   if (res) {
     Promise.all(
@@ -22,7 +23,8 @@ httpGetRequest("https://api.github.com/users/yashgharat/repos").then((res) => {
           get_language_data.push(languages)
         )
       )
-    ).then(() => {
+    )
+    .then(() => {
       var language_counts = {};
       var language_portions = {};
       var total = 0;
@@ -44,6 +46,9 @@ httpGetRequest("https://api.github.com/users/yashgharat/repos").then((res) => {
         //language_portions[language] = portion
         // TODO create progess bars here
         if (portion > 3) {
+          if(portion < 30) {
+            portion *= 4
+          }
           progressbars +=
             '<div class="progress">' +
             '<span class="skill">' +
@@ -55,7 +60,7 @@ httpGetRequest("https://api.github.com/users/yashgharat/repos").then((res) => {
             '<div class="progress-bar" role="progressbar" aria-valuenow="' +
             portion +
             '" aria-valuemin="0" aria-valuemax="100" style="width:' +
-            portion * 2 +
+            portion +
             '%;"></div>' +
             "</div></div>";
           document.querySelector(".github-skills").innerHTML = progressbars;

@@ -7,13 +7,6 @@
   --primary-text: #EAEAEA;
   --primary: #58AFFF;
   --secondary: #00447C;
-
-
-  --vp-pink: #FF55F8;
-  --vp-blue: #00F0FF;
-  --vp-purple: #B967FF;
-  --vp-green: #05FFA1;
-  --vp-yellow: #FFFB96;
 }
 
 /*--------------------------------------------------------------
@@ -427,7 +420,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #f7f8f9;
+  color: var(--primary-text);
 }
 
 .skills .progress .skill .val {
@@ -436,14 +429,16 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #728394;
+  background: var(--secondary);
+  border-radius: 8px;
 }
 
 .skills .progress-bar {
   width: 1px;
-  height: 10px;
+  height: 20px;
   transition: 0.9s;
-  background-color: indigo;
+  border-radius: 8px;
+  background-color: var(--primary);
 }
 
 .outer-skills {
@@ -707,7 +702,7 @@ section {
 }
 
 .post-container {
-  border: 2px solid #b0b0ad;
+  border: 2px solid gray;
   border-radius: 10px;
   padding: 10px;
   transition: 0.25s ease-in-out;
@@ -715,12 +710,12 @@ section {
 }
 
 .post-container:hover {
-  box-shadow: 5px 5px 4px black;
+  box-shadow: 6px 5px 4px var(--secondary);
   cursor: pointer;
 }
 
 .post-title {
-  color: white;
+  color: var(--primary-text);
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -786,8 +781,8 @@ section {
 .archive-container {
   max-height: 55vh;
   width: 100%;
-  margin-top: 5vh;
-  border: 2px solid #b0b0ad;
+  margin-top: 2vh;
+  border: 2px solid gray;
   border-radius: 10px;
   clip-path: stroke-box;
   overflow-y: scroll;
