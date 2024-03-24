@@ -4,6 +4,7 @@
 :root {
   font-size: 16px;
   --background: #171717;
+  --card-background: #0d1117;
   --primary-text: #EAEAEA;
   --primary: #58AFFF;
   --secondary: #00447C;
@@ -77,13 +78,12 @@ h6 {
 
 .back-to-top i {
   font-size: 3rem;
-  color: var(--primary-text);
+  color: var(--background);
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: var(--secondary);
-  color: var(--primary-text);
 }
 
 .back-to-top.active {
@@ -541,95 +541,37 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.svg-container {
-  width: 25%;
-  margin: auto;
+#portfolio .container {
+  margin: 1rem auto;
 }
-
-.svg-content {
-  color: var(--vp-pink);
-  margin: auto 0;
+.top-container {
+  border: 2px solid gray;
+  background: var(--card-background);
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  transition: 0.25s ease-in-out;
+  height: 100%;
 }
-
-.map-container {
-  margin-top: 5vh;
-  position: relative;
-  width: 100%;
-  vertical-align: middle;
-  overflow-y: visible;
-  padding-bottom: 5vh;
-}
-
-.bot-row {
-  margin-top: 20vh;
-}
-
-.category {
-  display: grid;
-  place-items: center;
-  grid-template-areas: "projects";
-  margin: auto;
-}
-
-.category-background {
-  border-radius: 50%;
-  background: indigo;
-  width: 13vw;
-  height: 13vw;
-  border: 0.2vw solid lightgray;
-  position: relative;
-  z-index: 1;
-  grid-area: projects;
-}
-
-.project {
-  border-radius: 50%;
-  background: var(--vp-purple);
-  width: 9vw;
-  height: 9vw;
-  grid-area: projects;
-  margin: 0;
-  transition: margin 0.5s ease;
-  z-index: 0;
-}
-
-.category-title {
-  font-size: 1.5vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  grid-area: projects;
-  z-index: 2;
-  font-style: normal;
-  letter-spacing: 0.18em;
-}
-
-.category-container .category:hover div:nth-child(2) {
-  margin: -12vw -12vw 0 0;
-}
-
-.category-container .category:hover div:nth-child(3) {
-  margin: -12vw 0 0 -12vw;
-}
-
-.category-container .category:hover div:nth-child(4) {
-  margin: 0 0 -18vw 0;
-}
-
-.project-title {
-  text-decoration: none;
-  color: white;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bolder;
-  text-align: center;
-  padding: 0.5vw;
-  font-size: 1.15vw;
-}
-
-.project-title:hover {
-  color: var(--vp-yellow);
+.top-container:hover {
+  box-shadow: 6px 5px 4px var(--secondary);
   cursor: pointer;
 }
+.more-projects {
+  margin-top: 2rem !important;
+}
+#portfolio .projects-btn {
+  font-weight: medium;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: var(--primary-text);
+  background: var(--primary);
+}
+
+#portfolio .projects-btn i {
+  padding-right: 0.5rem;
+}
+
 
 .modal-dialog {
   background: var(--background);
@@ -717,6 +659,7 @@ section {
 
 .post-container {
   border: 2px solid gray;
+  background: var(--card-background);
   border-radius: 10px;
   padding: 10px;
   transition: 0.25s ease-in-out;
@@ -813,6 +756,7 @@ section {
   border: 2px solid lightgray;
   border-radius: 6px;
   transition: 0.25s ease;
+  background: var(--card-background);
 }
 
 .archive-item:hover {

@@ -44,9 +44,9 @@
         <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house-door-fill"></i> <span>Home</span></a>
         </li>
         <li><a href="#about" class="nav-link scrollto"><i class="bi bi-person-fill"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-kanban-fill"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bi bi-archive-fill"></i> <span>Portfolio</span></a>
         </li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-kanban-fill"></i> <span>Resume</span></a></li>
         <li><a href="#blog" class="nav-link scrollto"><i class="bi bi-pen-fill"></i> <span>Blog</span></a></li>
       </ul>
     </nav>
@@ -61,11 +61,12 @@
       <p>I'm <span class="typed" data-typed-items="an Engineer, a Developer, a Researcher, a Student"></span></p>
       <div class="social-links">
         <a href="https://github.com/yashgharat" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://twitter.com/ohmygosh_yash" class="twitter"><i class="bi bi-twitter-x""></i></a>
-        <a href=" https://www.instagram.com/ohmygosh_yash/" class="instagram"><i class="bi bi-instagram""></i></a>
-        <a href=" https://www.linkedin.com/in/yash-gharat/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/yash-gharat/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="tel:+1 (904) 900-9864" class="phone"><i class="bi bi-telephone-fill""></i></a>
+        <a href=" mailto:yash.gharat@outlook.com" class="email"><i class="bi bi-envelope-at-fill""></i></a>
       </div>
-      <div class="resume-link"><a href="assets/resume.pdf" class="resume-btn">Resume</a></div>
+      <div class=" resume-link"><a href="assets/resume.pdf" class="resume-btn">Resume</a>
+      </div>
     </div>
   </section><!-- End Hero -->
 
@@ -128,6 +129,64 @@
       </div>
     </section>
     <!-- End Skills Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Since I love keeping updated on my skills and hobbies, I am usually working on many projects.
+            Below is some of my best work.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-4">
+              <div class="top-container">
+                <div class="container">
+                  <h4>Goop Dashboard</h4>
+                </div>
+                <div class="container">
+                  Built a Raspberry Pi-powered LED pixel dashboard with integrated features including an advanced
+                  tamagotchi, weather display, and Spotify integration.
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4">
+              <div class="top-container">
+                <div class="container">
+                  <h4>PhantoMouse</h4>
+                </div>
+                <div class="container">
+                  Generated a synthetic 3D dataset using Blender and Unity for a machine learning project enhancing
+                  computer mouse accessibility for prosthetic users.
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4">
+              <div class="top-container">
+                <div class="container">
+                  <h4>Deep System Identification</h4>
+                </div>
+                <div class="container">
+                  Designed a RNN coupled with a Kalman filter to identify the dynamical nonlinear system of an unknown
+                  target based on observational data.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more-projects container text-center">
+          <div class="row">
+            <div class="col">
+              <a class="projects-btn"><span><i class="bi bi-search"></i>See More</span></a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -307,63 +366,6 @@
       </div>
     </section><!-- End Resume Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>Since I love keeping updated on my skills and hobbies, I am usually working on many projects.
-            Below is some of my best work.
-          </p>
-        </div>
-
-        <div class="container map-container">
-          <div class="row top-row">
-            <div class="col-4 category-container app-container justify-content-center d-flex align-items-center">
-              <div id="category-school" class="category category-school">
-              </div>
-            </div>
-            <div class="col-4 container svg-container">
-              <img id="category-root" class="img-fluid svg-content" src="assets/img/2099158.svg" alt="">
-            </div>
-            <div class="col-4 category-container work-container justify-content-center d-flex align-items-center">
-              <div id="category-work" class="category category-work">
-              </div>
-            </div>
-          </div>
-          <div class="row bot-row">
-            <div class="col-12 category-container personal-container justify-content-center d-flex align-items-center">
-              <div id="category-personal" class="category category-personal">
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectsModalTitle" aria-hidden="true"
-            role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content rounded-50">
-                <div class="modal-header">
-                  <div class="container-fluid text-center">
-                    <div class="row">
-                      <h5 class="modal-title" id="projectsModalTitle"></h5>
-                    </div>
-                    <div class="row">
-                      <a class="modal-link" id="projectsModalLink"></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-body" id="projectsModalBody">
-                </div>
-                <div class="modal-footer" id="projectsModalFooter">
-                  <button type="button" class="btn-dismiss mx-auto" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Portfolio Section -->
-
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
       <div class="section-title">
@@ -500,11 +502,11 @@
         </div>
       </div>
     </section>
-
     <!-- End Blog Section -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container"> <!-- <data-aos="fade-up"> -->
+      <div class="container">
 
         <div class="section-title">
           <h2>Contact</h2>
@@ -515,7 +517,8 @@
           <span><i class="bi bi-phone-fill"></i>+1 (904) 900-9864</span>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -524,44 +527,44 @@
     <div class="container text-center">
       <div class="social-links">
         <a href="https://github.com/yashgharat" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://twitter.com/ohmygosh_yash" class="twitter"><i class="bi bi-twitter-x""></i></a>
-        <a href=" https://www.instagram.com/ohmygosh_yash/" class="instagram"><i class="bi bi-instagram""></i></a>
-        <a href=" https://www.linkedin.com/in/yash-gharat/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/yash-gharat/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="tel:+1 (904) 900-9864" class="phone"><i class="bi bi-telephone-fill""></i></a>
+        <a href=" mailto:yash.gharat@outlook.com" class="email"><i class="bi bi-envelope-at-fill""></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href=" #" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/tagcloud/TagCloud.min.js"></script>
-  <script src="assets/vendor/axios/axios.min.js"></script>
-  <script src="assets/vendor/leaderline/leader-line.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-  <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
-  <script src="assets/vendor/gh-contrib-graph/gh.js"></script>
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/typed.js/typed.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/tagcloud/TagCloud.min.js"></script>
+        <script src="assets/vendor/axios/axios.min.js"></script>
+        <script src="assets/vendor/leaderline/leader-line.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  <!-- Helper JS Files -->
-  <script src="assets/js/sample_languages.js"></script>
-  <script src="assets/js/github_info.js"></script>
-  <script src='assets/js/projects.js'></script>
-  <!-- <script src="assets/js/portfolio.js"></script> -->
-  <script src="assets/js/blog.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+        <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+        <script src="assets/vendor/gh-contrib-graph/gh.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        <!-- Helper JS Files -->
+        <script src="assets/js/sample_languages.js"></script>
+        <script src="assets/js/github_info.js"></script>
+        <script src='assets/js/projects.js'></script>
+        <!-- <script src="assets/js/portfolio.js"></script> -->
+        <script src="assets/js/blog.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
 
 </body>
 
