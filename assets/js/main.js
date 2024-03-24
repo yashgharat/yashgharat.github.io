@@ -177,11 +177,11 @@
     'AFSIM', 'Dart', 'XML', 'Visual Basic', 'SQL',
     'Android Studio', 'Node.js', 'Angular', 'Flutter',
     'Git', 'Bootstrap', 'AWS', 'Firebase', 'GCM', 'Linux',
-    'Material.io', 'Gimp'
+    'Material.io', 'Gimp', 'Figma', 'C++', 'Jupyter', 'PrimeNG'
     ];
 
     var tagCloud = TagCloud('.skills-content', skills, {
-      radius: ($(window).width() < 500 ? 150 : 275),
+      radius: ($(window).width() < 500 ? 150 : 280),
       maxSpeed: 'fast',
       initSpeed: 'fast',
       direction: 135,
