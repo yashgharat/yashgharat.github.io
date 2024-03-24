@@ -692,6 +692,11 @@ section {
 .blog {
   margin: 0 6rem;
 }
+@media screen and (max-width: 768px) {
+  .blog {
+    margin: 0 1rem;
+  }
+}
 
 .blog-title {
   font-size: 1.3rem;
