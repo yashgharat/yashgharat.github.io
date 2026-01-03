@@ -1,191 +1,118 @@
-/**
-* Template Name: MyResume - v4.6.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+var before = document.getElementById("before");
+var liner = document.getElementById("liner");
+var command = document.getElementById("typer");
+var textarea = document.getElementById("texter");
+var terminal = document.getElementById("terminal");
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (elem , all = false) => {
-    elem = elem .trim()
-    if (all) {
-      return [...document.querySelectorAll(elem)]
+window.addEventListener("keyup", enterKey);
+
+function downloadPdf(pdfUrl, fileName) {
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = fileName || "resume.pdf";
+  link.style.display = "none";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+function addLine(text, style, time) {
+  var t = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text.charAt(i) == " " && text.charAt(i + 1) == " ") {
+      t += "&nbsp;&nbsp;";
+      i++;
     } else {
-      return document.querySelector(elem)
+      t += text.charAt(i);
     }
   }
+  setTimeout(function () {
+    var next = document.createElement("p");
+    next.innerHTML = t;
+    next.className = style;
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, elem , listener, all = false) => {
-    let selectelem = select(elem , all)
-    if (selectelem) {
-      if (all) {
-        selectelem .forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectelem .addEventListener(type, listener)
-      }
-    }
+    before.parentNode.insertBefore(next, before);
+
+    window.scrollTo(0, document.body.offsetHeight);
+  }, time);
+}
+//init
+textarea.value = "";
+command.innerHTML = textarea.value;
+
+function enterKey(e) {
+  if (e.keyCode == 13) {
+    // commands.push(command.innerHTML);
+    addLine("user@system.com:~$ " + command.innerHTML, "no-animation", 0);
+    commander(command.innerHTML.toLowerCase());
+    command.innerHTML = "";
+    textarea.value = "";
   }
+}
 
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (elem , listener) => {
-    elem .addEventListener('scroll', listener)
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (elem) => {
-    let elementPos = select(elem).offsetTop
-    window.scrollTo({
-      top: elementPos,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let body = select('body')
-      if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
+function loopLines(name, style, time) {
+  name.forEach(function (item, index) {
+    addLine(item, style, index * time);
   });
+}
 
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
+function commander(cmd) {
+  console.log(cmd);
+  switch (cmd.toLowerCase()) {
+    case "help":
+      loopLines(help, "margin", 80);
+      break;
+    case "whodis":
+      loopLines(whodis, "margin", 80);
+      break;
+    case "social":
+      loopLines(social, "margin", 80);
+      break;
+    case "clear":
+      setTimeout(function () {
+        terminal.innerHTML = '<a id="before"></a>';
+        before = document.getElementById("before");
+      }, 1);
+      break;
+    case "banner":
+      loopLines(banner, "", 80);
+      break;
+    case "linkedin":
+      addLine("Opening LinkedIn...", "", 0);
+      newTab(linkedin);
+      break;
+    case "github":
+      addLine("Opening GitHub...", "", 0);
+      newTab(github);
+      break;
+    case "resume":
+      loopLines(resume, "", 80);
+      break;
+    case "resume swe":
+      addLine("Downloading SWE resume", "", 30);
+      newTab("assets/resumes/yash_gharat_SWE.pdf");
+      break;
+    case "resume ml":
+      addLine("Downloading ML resume", "", 30);
+      newTab("assets/resumes/yash_gharat_ML.pdf");
+      break;
+    case "resume gov":
+      addLine("Downloading GOV resume", "", 30);
+      newTab("assets/resumes/yash_gharat_DFNS.pdf");
+      break;
+    default:
+      addLine(
+        '<span class="inherit">Command not found. For a list of commands, type <span class="command">\'help\'</span>.</span>',
+        "error",
+        100,
+      );
+      break;
   }
+}
 
-  /**
-   * Hero type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-
-  /**
-   * Skills animation
-   */
-
-  let skillsContent = select('.github-skills');
-  if (skillsContent) {
-    new Waypoint({
-      element: skillsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress-bar', true);
-        progress.forEach((elem) => {
-          elem.style.width = elem.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
-
-    /**
-   * TagCloud
-   */
-    const skills = [
-    'Java', 'C', 'Python', 'HTML', 'CSS', 'Scala',
-    'AFSIM', 'Dart', 'XML', 'Visual Basic', 'SQL',
-    'Android Studio', 'Node.js', 'Angular', 'Flutter',
-    'Git', 'Bootstrap', 'AWS', 'Firebase', 'GCM', 'Linux',
-    'Material.io', 'Gimp', 'Figma', 'C++', 'Jupyter', 'PrimeNG'
-    ];
-
-    var tagCloud = TagCloud('.skills-content', skills, {
-      radius: ($(window).width() < 500 ? 150 : 280),
-      maxSpeed: 'fast',
-      initSpeed: 'fast',
-      direction: 135,
-      keep: true
-    });
-
-})()
+function newTab(link) {
+  setTimeout(function () {
+    window.open(link, "_blank");
+  }, 500);
+}
